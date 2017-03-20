@@ -1,0 +1,17 @@
+out_front
+out_main
+.DS_Store
+pom.xml
+*jar
+lib/*
+classes/*
+out/*
+target/*
+.lein-deps-sum
+.lein-repl-history
+.lein-plugins/*
+node_modules/*
+*.iml
+*.ipr
+*.iws
+electron/*
