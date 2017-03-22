@@ -1,0 +1,144 @@
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 1.437 seconds.[0m
+notifying browser that file changed:  app/js/app.js
+notifying browser that file changed:  app/js/out/goog/deps.js
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.798 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.415 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.432 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.409 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.415 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.418 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.407 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.379 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.381 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.393 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.391 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.444 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.402 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.409 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.415 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.421 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[36m----  Compiler Warning on   /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/init.cljs   line:4  column:2  ----[0m
+
+  [1mUse of undeclared Var blocks-editor-demo.core/init![0m
+
+  [36m1[0m  [36m(ns blocks-editor-demo.init[0m
+  [36m2[0m  [36m  (:require [blocks-editor-demo.core :as c]))[0m
+  [36m3[0m  [36m[0m
+  [33m4[0m  [1m(c/init! {})[0m
+  [0m [0m  [33m ^--- Use of undeclared Var blocks-editor-demo.core/init![0m
+
+[36m----  Compiler Warning : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/init.cljs  ----[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.487 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[36m----  Compiler Warning on   /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/init.cljs   line:4  column:1  ----[0m
+
+  [1mWrong number of args (1) passed to blocks-editor-demo.core/init![0m
+
+  [36m1[0m  [36m(ns blocks-editor-demo.init[0m
+  [36m2[0m  [36m  (:require [blocks-editor-demo.core :as c]))[0m
+  [36m3[0m  [36m[0m
+  [33m4[0m  [1m(c/init! {})[0m
+  [0m [0m  [33m^--- Wrong number of args (1) passed to blocks-editor-demo.core/init![0m
+
+[36m----  Compiler Warning : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/init.cljs  ----[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.409 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[36m----  Compiler Warning on   /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs   line:80  column:20  ----[0m
+
+  [1mUse of undeclared Var blocks-editor-demo.core/ui[0m
+
+  [36m77[0m  [36m(defn ^:export init![0m
+  [36m78[0m  [36m  [][0m
+  [36m79[0m  [36m  (rf/dispatch-sync [:initialize])     ;; puts a value into application state[0m
+  [33m80[0m  [1m  (reagent/render [ui]              ;; mount the application's ui into '<div id="app" />'[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var blocks-editor-demo.core/ui[0m
+  [36m81[0m  [36m                  (js/document.getElementById "app")))[0m
+
+[36m----  Compiler Warning : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs  ----[0m
+[36m----  Compiler Warning on   /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/init.cljs   line:4  column:1  ----[0m
+
+  [1mWrong number of args (1) passed to blocks-editor-demo.core/init![0m
+
+  [36m1[0m  [36m(ns blocks-editor-demo.init[0m
+  [36m2[0m  [36m  (:require [blocks-editor-demo.core :as c]))[0m
+  [36m3[0m  [36m[0m
+  [33m4[0m  [1m(c/init! {})[0m
+  [0m [0m  [33m^--- Wrong number of args (1) passed to blocks-editor-demo.core/init![0m
+
+[36m----  Compiler Warning : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/init.cljs  ----[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.48 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+Figwheel: Can't open  ("/c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs" 80 20) No :open-file-command supplied in the config.
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[36m----  Compiler Warning on   /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs   line:80  column:20  ----[0m
+
+  [1mUse of undeclared Var blocks-editor-demo.core/ui[0m
+
+  [36m77[0m  [36m(defn ^:export init![0m
+  [36m78[0m  [36m  [settings][0m
+  [36m79[0m  [36m  (rf/dispatch-sync [:initialize])     ;; puts a value into application state[0m
+  [33m80[0m  [1m  (reagent/render [ui]              ;; mount the application's ui into '<div id="app" />'[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var blocks-editor-demo.core/ui[0m
+  [36m81[0m  [36m                  (js/document.getElementById "app")))[0m
+
+[36m----  Compiler Warning : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs  ----[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.441 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[36m----  Compiler Warning on   /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/init.cljs   line:4  column:1  ----[0m
+
+  [1mWrong number of args (1) passed to blocks-editor-demo.core/init![0m
+
+  [36m1[0m  [36m(ns blocks-editor-demo.init[0m
+  [36m2[0m  [36m  (:require [blocks-editor-demo.core :as c]))[0m
+  [36m3[0m  [36m[0m
+  [33m4[0m  [1m(c/init! {})[0m
+  [0m [0m  [33m^--- Wrong number of args (1) passed to blocks-editor-demo.core/init![0m
+
+[36m----  Compiler Warning : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/init.cljs  ----[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.439 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.407 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.399 seconds.[0m
+notifying browser that file changed:  app/js/app.js
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
