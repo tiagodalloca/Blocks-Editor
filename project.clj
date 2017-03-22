@@ -13,24 +13,25 @@
                                   [figwheel-sidecar "0.5.9"]
                                   [com.cemerick/piggieback "0.2.1"]]
 
-                   :source-paths ["src" "src_front"]}}
+                   :source-paths ["src" "src_tools" "dev"]}}
   
   :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
 
   :figwheel {:http-server-root "public"
              :ring-handler figwheel-middleware/app
-             :server-port 3449}  
+             :server-port 3449}
   
   :hooks [leiningen.cljsbuild] 
   :cljsbuild {:builds
-              {:release {:source-paths ["src_front"]
+              {:release {:source-paths ["src"]
                          :compiler {:output-to "app/js/app.js"
-                                    :output-dir "resources/public/js/out/r"
+                                    :output-dir "resources/public/prod/out/"
                                     :optimizations :advanced}}
                
-               :dev {:source-paths ["src_front"]
+               :dev {:source-paths ["src" "dev/cljs/"]
                      :figwheel true
                      :compiler {:output-to "app/js/app.js"
-                                :output-dir "resources/public/js/out/d"}}}}
+                                :output-dir "app/js/out/"}}}}
 
   :clean-targets ["app/js/"])
+
