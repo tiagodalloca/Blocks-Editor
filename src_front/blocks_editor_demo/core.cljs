@@ -1,4 +1,4 @@
-(ns blocks-editor-demo-front.core
+(ns blocks-editor-demo.core
   (:require [reagent.core :as reagent]
             [re-frame.core :as rf]))
 
@@ -6,9 +6,7 @@
   [:div#app-wrapper
    [:h1 "Hello world"]])
 
-(defn run ^:private [setting]
+(defn init! [setting]
   (rf/dispatch-sync [:initialize])
   (reagent/render [ui] (js/document.getElementById "app")))
 
-(defn init! [setting]
-  (run setting))

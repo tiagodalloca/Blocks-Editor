@@ -1,5 +1,6 @@
 out_front
 out_main
+out
 .DS_Store
 pom.xml
 *jar
@@ -10,8 +11,11 @@ target/*
 .lein-deps-sum
 .lein-repl-history
 .lein-plugins/*
-node_modules/*
+node_modules
+app/js/
 *.iml
 *.ipr
 *.iws
 electron/*
+*.nrepl-port
+figwheel-server.log

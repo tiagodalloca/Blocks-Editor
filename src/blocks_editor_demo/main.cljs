@@ -1,5 +1,5 @@
-(ns blocks-editor-demo.core
-    (:require [cljs.nodejs :as nodejs]))
+(ns blocks-editor-demo.main
+  (:require [cljs.nodejs :as nodejs]))
 
 (def path (nodejs/require "path"))
 
@@ -7,18 +7,13 @@
 
 (def BrowserWindow (.-BrowserWindow Electron))
 
-(def crash-reporter (.-crashReporter Electron))
-
 (def Os (nodejs/require "os"))
 
 (def *win* (atom nil))
 
 (def app (.-app Electron))
 
-(defn -main []
-  (.start crash-reporter (clj->js {:companyName "MrDallOca"
-                                   :submitURL   "nope"}))
-
+(defn -main [] 
   ;; error listener
   (.on nodejs/process "error"
        (fn [err] (.log js/console err)))
