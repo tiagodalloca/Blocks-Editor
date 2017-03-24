@@ -2,7 +2,12 @@
   "name": "blocks-editor-demo",
   "version": "0.1.0",
   "main": "main.js",
-  "dependencies": {
+  "devDependencies": {
     "google-closure-compiler-js": "^20170218.0.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
+    "less": "^2.7.2"
   }
 }

@@ -142,3 +142,437 @@ notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
 [32mSuccessfully compiled "app/js/app.js" in 0.399 seconds.[0m
 notifying browser that file changed:  app/js/app.js
 notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.422 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.37 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.378 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.412 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.381 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.367 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.356 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 1.371 seconds.[0m
+notifying browser that file changed:  app/js/app.js
+notifying browser that file changed:  app/js/out/goog/deps.js
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.479 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.426 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[36m----  Compiler Warning on   /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs   line:136  column:21  ----[0m
+
+  [1mUse of undeclared Var blocks-editor-demo.core/compareto-block[0m
+
+  [36m132[0m  [36m  [][0m
+  [36m133[0m  [36m  [:div#canvas[0m
+  [36m134[0m  [36m   [(method-block "Método exemplo")[0m
+  [36m135[0m  [36m    [(var-block "x")][0m
+  [33m136[0m  [1m    [(while-block) (compareto-block :< "x" 10) [0m
+  [0m   [0m  [33m                    ^--- Use of undeclared Var blocks-editor-demo.core/compareto-block[0m
+  [36m137[0m  [36m     [(command-block "INC" 1)]][0m
+  [36m138[0m  [36m    [(command-block "RETURN" 1)]]])[0m
+  [36m139[0m  [36m[0m
+  [36m140[0m  [36m(defn ^:export init![0m
+  [36m141[0m  [36m  [settings][0m
+
+[36m----  Compiler Warning : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs  ----[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.634 seconds.[0m
+notifying browser that file changed:  app/js/app.js
+notifying browser that file changed:  app/js/out/goog/deps.js
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[36m----  Compiler Warning on   /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs   line:137  column:7  ----[0m
+
+  [1mUse of undeclared Var blocks-editor-demo.core/compareto-block[0m
+
+  [36m133[0m  [36m  [:div#canvas[0m
+  [36m134[0m  [36m   [(method-block "Método exemplo")[0m
+  [36m135[0m  [36m    [(var-block "x")][0m
+  [36m136[0m  [36m    [(while-block)[0m
+  [33m137[0m  [1m     (compareto-block :< "x" 10) [0m
+  [0m   [0m  [33m      ^--- Use of undeclared Var blocks-editor-demo.core/compareto-block[0m
+  [36m138[0m  [36m     [(command-block "INC" 1)]][0m
+  [36m139[0m  [36m    [(command-block "RETURN" 1)]]])[0m
+  [36m140[0m  [36m[0m
+  [36m141[0m  [36m(defn ^:export init![0m
+  [36m142[0m  [36m  [settings][0m
+
+[36m----  Compiler Warning : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs  ----[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.508 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[31mFailed to compile "app/js/app.js" in 0.384 seconds.[0m
+[36m----  Could not Analyze  /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs   line:123  column:1  ----[0m
+
+  [1mParameter declaration missing[0m
+
+  [36m121[0m  [36m  (block [:div "WHILE"] "while-block"))[0m
+  [36m122[0m  [36m[0m
+  [33m123[0m  [1m(defn compare-to)[0m
+  [0m   [0m  [33m^--- Parameter declaration missing[0m
+  [36m124[0m  [36m[0m
+  [36m125[0m  [36m(defn command-block[0m
+  [36m126[0m  [36m  [name arity][0m
+
+[36m----  Analysis Error : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs  ----[0m
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[36m----  Compiler Warning on   /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs   line:137  column:7  ----[0m
+
+  [1mUse of undeclared Var blocks-editor-demo.core/compareto-block[0m
+
+  [36m133[0m  [36m  [:div#canvas[0m
+  [36m134[0m  [36m   [(method-block "Método exemplo")[0m
+  [36m135[0m  [36m    [(var-block "x")][0m
+  [36m136[0m  [36m    [(while-block)[0m
+  [33m137[0m  [1m     (compareto-block :< "x" 10) [0m
+  [0m   [0m  [33m      ^--- Use of undeclared Var blocks-editor-demo.core/compareto-block[0m
+  [36m138[0m  [36m     [(command-block "INC" 1)]][0m
+  [36m139[0m  [36m    [(command-block "RETURN" 1)]]])[0m
+  [36m140[0m  [36m[0m
+  [36m141[0m  [36m(defn ^:export init![0m
+  [36m142[0m  [36m  [settings][0m
+
+[36m----  Compiler Warning : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs  ----[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.484 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[36m----  Compiler Warning on   /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs   line:137  column:6  ----[0m
+
+  [1mWrong number of args (3) passed to blocks-editor-demo.core/command-block[0m
+
+  [36m133[0m  [36m  [:div#canvas[0m
+  [36m134[0m  [36m   [(method-block "Método exemplo")[0m
+  [36m135[0m  [36m    [(var-block "x")][0m
+  [36m136[0m  [36m    [(while-block)[0m
+  [33m137[0m  [1m     (command-block :< "x" 10) [0m
+  [0m   [0m  [33m     ^--- Wrong number of args (3) passed to blocks-editor-demo.core/command-block[0m
+  [36m138[0m  [36m     [(command-block "INC" 1)]][0m
+  [36m139[0m  [36m    [(command-block "RETURN" 1)]]])[0m
+  [36m140[0m  [36m[0m
+  [36m141[0m  [36m(defn ^:export init![0m
+  [36m142[0m  [36m  [settings][0m
+
+[36m----  Compiler Warning : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs  ----[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.455 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[36m----  Compiler Warning on   /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs   line:137  column:6  ----[0m
+
+  [1mWrong number of args (3) passed to blocks-editor-demo.core/command-block[0m
+
+  [36m133[0m  [36m  [:div#canvas[0m
+  [36m134[0m  [36m   [(method-block "Método exemplo")[0m
+  [36m135[0m  [36m    [(var-block "x")][0m
+  [36m136[0m  [36m    [(while-block)[0m
+  [33m137[0m  [1m     (command-block "LESS THAN" "x" 10) [0m
+  [0m   [0m  [33m     ^--- Wrong number of args (3) passed to blocks-editor-demo.core/command-block[0m
+  [36m138[0m  [36m     [(command-block "INC" 1)]][0m
+  [36m139[0m  [36m    [(command-block "RETURN" 1)]]])[0m
+  [36m140[0m  [36m[0m
+  [36m141[0m  [36m(defn ^:export init![0m
+  [36m142[0m  [36m  [settings][0m
+
+[36m----  Compiler Warning : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs  ----[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.465 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[36m----  Compiler Warning on   /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs   line:137  column:4  ----[0m
+
+  [1mWrong number of args (3) passed to blocks-editor-demo.core/command-block[0m
+
+  [36m133[0m  [36m  [:div#canvas[0m
+  [36m134[0m  [36m   (method-block "Método exemplo")[0m
+  [36m135[0m  [36m   (var-block "x")[0m
+  [36m136[0m  [36m   (while-block)[0m
+  [33m137[0m  [1m   (command-block "LESS THAN" "x" 10) [0m
+  [0m   [0m  [33m   ^--- Wrong number of args (3) passed to blocks-editor-demo.core/command-block[0m
+  [36m138[0m  [36m   (command-block "INC" 1)[0m
+  [36m139[0m  [36m   (command-block "RETURN" 1)])[0m
+  [36m140[0m  [36m[0m
+  [36m141[0m  [36m(defn ^:export init![0m
+  [36m142[0m  [36m  [settings][0m
+
+[36m----  Compiler Warning : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs  ----[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.493 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[36m----  Compiler Warning on   /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs   line:136  column:4  ----[0m
+
+  [1mWrong number of args (0) passed to blocks-editor-demo.core/while-block[0m
+
+  [36m132[0m  [36m  [][0m
+  [36m133[0m  [36m  [:div#canvas[0m
+  [36m134[0m  [36m   (method-block "Método exemplo")[0m
+  [36m135[0m  [36m   (var-block "x")[0m
+  [33m136[0m  [1m   (while-block)[0m
+  [0m   [0m  [33m   ^--- Wrong number of args (0) passed to blocks-editor-demo.core/while-block[0m
+  [36m137[0m  [36m   (command-block "LESS THAN" "x" 10) [0m
+  [36m138[0m  [36m   (command-block "INC" 1)[0m
+  [36m139[0m  [36m   (command-block "RETURN" 1)])[0m
+  [36m140[0m  [36m[0m
+  [36m141[0m  [36m(defn ^:export init![0m
+
+[36m----  Compiler Warning : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs  ----[0m
+[36m----  Compiler Warning on   /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs   line:137  column:4  ----[0m
+
+  [1mWrong number of args (3) passed to blocks-editor-demo.core/command-block[0m
+
+  [36m133[0m  [36m  [:div#canvas[0m
+  [36m134[0m  [36m   (method-block "Método exemplo")[0m
+  [36m135[0m  [36m   (var-block "x")[0m
+  [36m136[0m  [36m   (while-block)[0m
+  [33m137[0m  [1m   (command-block "LESS THAN" "x" 10) [0m
+  [0m   [0m  [33m   ^--- Wrong number of args (3) passed to blocks-editor-demo.core/command-block[0m
+  [36m138[0m  [36m   (command-block "INC" 1)[0m
+  [36m139[0m  [36m   (command-block "RETURN" 1)])[0m
+  [36m140[0m  [36m[0m
+  [36m141[0m  [36m(defn ^:export init![0m
+  [36m142[0m  [36m  [settings][0m
+
+[36m----  Compiler Warning : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs  ----[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.473 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[36m----  Compiler Warning on   /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs   line:136  column:4  ----[0m
+
+  [1mWrong number of args (0) passed to blocks-editor-demo.core/while-block[0m
+
+  [36m132[0m  [36m  [][0m
+  [36m133[0m  [36m  [:div#canvas[0m
+  [36m134[0m  [36m   (method-block "Método exemplo")[0m
+  [36m135[0m  [36m   (var-block "x")[0m
+  [33m136[0m  [1m   (while-block)[0m
+  [0m   [0m  [33m   ^--- Wrong number of args (0) passed to blocks-editor-demo.core/while-block[0m
+  [36m137[0m  [36m   (command-block "LESS THAN" "x" 10) [0m
+  [36m138[0m  [36m   (command-block "INC" 1)[0m
+  [36m139[0m  [36m   (command-block "RETURN" 1)])[0m
+  [36m140[0m  [36m[0m
+  [36m141[0m  [36m(defn ^:export init![0m
+
+[36m----  Compiler Warning : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs  ----[0m
+[36m----  Compiler Warning on   /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs   line:137  column:4  ----[0m
+
+  [1mWrong number of args (3) passed to blocks-editor-demo.core/command-block[0m
+
+  [36m133[0m  [36m  [:div#canvas[0m
+  [36m134[0m  [36m   (method-block "Método exemplo")[0m
+  [36m135[0m  [36m   (var-block "x")[0m
+  [36m136[0m  [36m   (while-block)[0m
+  [33m137[0m  [1m   (command-block "LESS THAN" "x" 10) [0m
+  [0m   [0m  [33m   ^--- Wrong number of args (3) passed to blocks-editor-demo.core/command-block[0m
+  [36m138[0m  [36m   (command-block "INC" 1)[0m
+  [36m139[0m  [36m   (command-block "RETURN" 1)])[0m
+  [36m140[0m  [36m[0m
+  [36m141[0m  [36m(defn ^:export init![0m
+  [36m142[0m  [36m  [settings][0m
+
+[36m----  Compiler Warning : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs  ----[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.471 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[36m----  Compiler Warning on   /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs   line:136  column:4  ----[0m
+
+  [1mWrong number of args (0) passed to blocks-editor-demo.core/while-block[0m
+
+  [36m132[0m  [36m  [][0m
+  [36m133[0m  [36m  [:div#canvas[0m
+  [36m134[0m  [36m   (method-block "Método exemplo")[0m
+  [36m135[0m  [36m   (var-block "x")[0m
+  [33m136[0m  [1m   (while-block)[0m
+  [0m   [0m  [33m   ^--- Wrong number of args (0) passed to blocks-editor-demo.core/while-block[0m
+  [36m137[0m  [36m   (command-block "LESS THAN" "x" 10) [0m
+  [36m138[0m  [36m   (command-block "INC" 1)[0m
+  [36m139[0m  [36m   (command-block "RETURN" 1)])[0m
+  [36m140[0m  [36m[0m
+  [36m141[0m  [36m(defn ^:export init![0m
+
+[36m----  Compiler Warning : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs  ----[0m
+[36m----  Compiler Warning on   /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs   line:137  column:4  ----[0m
+
+  [1mWrong number of args (3) passed to blocks-editor-demo.core/command-block[0m
+
+  [36m133[0m  [36m  [:div#canvas[0m
+  [36m134[0m  [36m   (method-block "Método exemplo")[0m
+  [36m135[0m  [36m   (var-block "x")[0m
+  [36m136[0m  [36m   (while-block)[0m
+  [33m137[0m  [1m   (command-block "LESS THAN" "x" 10) [0m
+  [0m   [0m  [33m   ^--- Wrong number of args (3) passed to blocks-editor-demo.core/command-block[0m
+  [36m138[0m  [36m   (command-block "INC" 1)[0m
+  [36m139[0m  [36m   (command-block "RETURN" 1)])[0m
+  [36m140[0m  [36m[0m
+  [36m141[0m  [36m(defn ^:export init![0m
+  [36m142[0m  [36m  [settings][0m
+
+[36m----  Compiler Warning : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs  ----[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.442 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[36m----  Compiler Warning on   /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs   line:136  column:4  ----[0m
+
+  [1mWrong number of args (3) passed to blocks-editor-demo.core/while-block[0m
+
+  [36m132[0m  [36m  [][0m
+  [36m133[0m  [36m  [:div#canvas[0m
+  [36m134[0m  [36m   (method-block "Método exemplo")[0m
+  [36m135[0m  [36m   (var-block "x")[0m
+  [33m136[0m  [1m   (while-block[0m
+  [0m   [0m  [33m   ^--- Wrong number of args (3) passed to blocks-editor-demo.core/while-block[0m
+  [36m137[0m  [36m       (command-block "LESS THAN" "x" 10) [0m
+  [36m138[0m  [36m     (command-block "INC" 1)[0m
+  [36m139[0m  [36m     (command-block "RETURN" 1))])[0m
+  [36m140[0m  [36m[0m
+  [36m141[0m  [36m(defn ^:export init![0m
+
+[36m----  Compiler Warning : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs  ----[0m
+[36m----  Compiler Warning on   /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs   line:137  column:8  ----[0m
+
+  [1mWrong number of args (3) passed to blocks-editor-demo.core/command-block[0m
+
+  [36m133[0m  [36m  [:div#canvas[0m
+  [36m134[0m  [36m   (method-block "Método exemplo")[0m
+  [36m135[0m  [36m   (var-block "x")[0m
+  [36m136[0m  [36m   (while-block[0m
+  [33m137[0m  [1m       (command-block "LESS THAN" "x" 10) [0m
+  [0m   [0m  [33m       ^--- Wrong number of args (3) passed to blocks-editor-demo.core/command-block[0m
+  [36m138[0m  [36m     (command-block "INC" 1)[0m
+  [36m139[0m  [36m     (command-block "RETURN" 1))])[0m
+  [36m140[0m  [36m[0m
+  [36m141[0m  [36m(defn ^:export init![0m
+  [36m142[0m  [36m  [settings][0m
+
+[36m----  Compiler Warning : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs  ----[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.447 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[36m----  Compiler Warning on   /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs   line:136  column:4  ----[0m
+
+  [1mWrong number of args (3) passed to blocks-editor-demo.core/while-block[0m
+
+  [36m132[0m  [36m  [][0m
+  [36m133[0m  [36m  [:div#canvas[0m
+  [36m134[0m  [36m   (method-block "Método exemplo")[0m
+  [36m135[0m  [36m   (var-block "x")[0m
+  [33m136[0m  [1m   (while-block (command-block "LESS THAN" "x" 10) [0m
+  [0m   [0m  [33m   ^--- Wrong number of args (3) passed to blocks-editor-demo.core/while-block[0m
+  [36m137[0m  [36m     (command-block "INC" 1)[0m
+  [36m138[0m  [36m     (command-block "RETURN" 1))])[0m
+  [36m139[0m  [36m[0m
+  [36m140[0m  [36m(defn ^:export init![0m
+  [36m141[0m  [36m  [settings][0m
+
+[36m----  Compiler Warning : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs  ----[0m
+[36m----  Compiler Warning on   /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs   line:136  column:17  ----[0m
+
+  [1mWrong number of args (3) passed to blocks-editor-demo.core/command-block[0m
+
+  [36m132[0m  [36m  [][0m
+  [36m133[0m  [36m  [:div#canvas[0m
+  [36m134[0m  [36m   (method-block "Método exemplo")[0m
+  [36m135[0m  [36m   (var-block "x")[0m
+  [33m136[0m  [1m   (while-block (command-block "LESS THAN" "x" 10) [0m
+  [0m   [0m  [33m                ^--- Wrong number of args (3) passed to blocks-editor-demo.core/command-block[0m
+  [36m137[0m  [36m     (command-block "INC" 1)[0m
+  [36m138[0m  [36m     (command-block "RETURN" 1))])[0m
+  [36m139[0m  [36m[0m
+  [36m140[0m  [36m(defn ^:export init![0m
+  [36m141[0m  [36m  [settings][0m
+
+[36m----  Compiler Warning : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs  ----[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.409 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[36m----  Compiler Warning on   /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs   line:136  column:4  ----[0m
+
+  [1mWrong number of args (3) passed to blocks-editor-demo.core/while-block[0m
+
+  [36m132[0m  [36m  [][0m
+  [36m133[0m  [36m  [:div#canvas[0m
+  [36m134[0m  [36m   (method-block "Método exemplo")[0m
+  [36m135[0m  [36m   (var-block "x")[0m
+  [33m136[0m  [1m   (while-block (command-block "LESS THAN" 2) [0m
+  [0m   [0m  [33m   ^--- Wrong number of args (3) passed to blocks-editor-demo.core/while-block[0m
+  [36m137[0m  [36m     (command-block "INC" 1)[0m
+  [36m138[0m  [36m     (command-block "RETURN" 1))])[0m
+  [36m139[0m  [36m[0m
+  [36m140[0m  [36m(defn ^:export init![0m
+  [36m141[0m  [36m  [settings][0m
+
+[36m----  Compiler Warning : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs  ----[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.821 seconds.[0m
+notifying browser that file changed:  app/js/app.js
+notifying browser that file changed:  app/js/out/goog/deps.js
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.427 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.421 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[31mFailed to compile "app/js/app.js" in 0.282 seconds.[0m
+[36m----  Could not Compile  /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs  ----[0m
+
+  [1mfailed compiling file:src\blocks_editor_demo\core.cljs[0m
+
+[36m----  Compiler Error : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs  ----[0m
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.465 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.614 seconds.[0m
+notifying browser that file changed:  app/js/app.js
+notifying browser that file changed:  app/js/out/goog/deps.js
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.561 seconds.[0m
+notifying browser that file changed:  app/js/app.js
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.533 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.501 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.491 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.502 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.579 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.472 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.468 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.455 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.43 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.476 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 27.109 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js

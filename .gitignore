@@ -19,3 +19,6 @@ app/js/
 electron/*
 *.nrepl-port
 figwheel-server.log
+
+
+.projectile
