@@ -576,3 +576,206 @@ notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
 [0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
 [32mSuccessfully compiled "app/js/app.js" in 27.109 seconds.[0m
 notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.51 seconds.[0m
+notifying browser that file changed:  app/js/app.js
+notifying browser that file changed:  app/js/out/goog/deps.js
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.437 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.44 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.426 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.422 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.385 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.7 seconds.[0m
+notifying browser that file changed:  app/js/app.js
+notifying browser that file changed:  app/js/out/goog/deps.js
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[31mFailed to compile "app/js/app.js" in 0.379 seconds.[0m
+[36m----  Could not Read  src/blocks_editor_demo/core.cljs   line:19  column:12  ----[0m
+
+  [1mInvalid token: blockly/[0m
+
+  [36m17[0m  [36m [ui][0m
+  [36m18[0m  [36m (js/document.getElementById "app"))[0m
+  [33m19[0m  [1m(blockly/))[0m
+  [0m  [0m  [33m         ^--- Invalid token: blockly/[0m
+
+[36m----  Reader Error : Please see src/blocks_editor_demo/core.cljs  ----[0m
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[31mFailed to compile "app/js/app.js" in 0.315 seconds.[0m
+[36m----  Could not Read  src/blocks_editor_demo/core.cljs   line:19  column:12  ----[0m
+
+  [1mInvalid token: blockly/[0m
+
+  [36m17[0m  [36m [ui][0m
+  [36m18[0m  [36m (get-e "app"))[0m
+  [33m19[0m  [1m(blockly/))[0m
+  [0m  [0m  [33m         ^--- Invalid token: blockly/[0m
+
+[36m----  Reader Error : Please see src/blocks_editor_demo/core.cljs  ----[0m
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[36m----  Compiler Warning on   src/blocks_editor_demo/core.cljs   line:19  column:4  ----[0m
+
+  [1mNo such namespace: blockly, could not locate blockly.cljs, blockly.cljc, or Closure namespace ""[0m
+
+  [36m15[0m  [36m[settings][0m
+  [36m16[0m  [36m(reagent/render[0m
+  [36m17[0m  [36m [ui][0m
+  [36m18[0m  [36m (get-e "app"))[0m
+  [33m19[0m  [1m(blockly/inject (get-e "blocklyDiv")))[0m
+  [0m  [0m  [33m ^--- No such namespace: blockly, could not locate blockly.cljs, blockly.cljc, or Closure namespace ""[0m
+
+[36m----  Compiler Warning : Please see src/blocks_editor_demo/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/blocks_editor_demo/core.cljs   line:19  column:4  ----[0m
+
+  [1mUse of undeclared Var blockly/inject[0m
+
+  [36m15[0m  [36m[settings][0m
+  [36m16[0m  [36m(reagent/render[0m
+  [36m17[0m  [36m [ui][0m
+  [36m18[0m  [36m (get-e "app"))[0m
+  [33m19[0m  [1m(blockly/inject (get-e "blocklyDiv")))[0m
+  [0m  [0m  [33m ^--- Use of undeclared Var blockly/inject[0m
+
+[36m----  Compiler Warning : Please see src/blocks_editor_demo/core.cljs  ----[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.419 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.434 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.382 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.398 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.377 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.368 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.365 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.423 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.371 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.37 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.392 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.382 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[31mFailed to compile "app/js/app.js" in 0.33 seconds.[0m
+[36m----  Could not Read  /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs   line:8  column:33  ----[0m
+
+  [1mMap literal must contain an even number of forms[0m
+
+  [36m 7[0m  [36m(def blockly-style {:height 600[0m
+  [33m 8[0m  [1m                    :width 100%})[0m
+  [0m  [0m  [33m                                ^--- Map literal must contain an even number of forms[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(defn get-e [s][0m
+  [36m11[0m  [36m  (js/document.getElementById s))[0m
+
+[36m----  Reader Error : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs  ----[0m
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.374 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.36 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.334 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.396 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.397 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.352 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.364 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[36m----  Compiler Warning on   /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs   line:17  column:18  ----[0m
+
+  [1mUse of undeclared Var blocks-editor-demo.core/MENU[0m
+
+  [36m13[0m  [36m(defn ui[0m
+  [36m14[0m  [36m  [][0m
+  [36m15[0m  [36m  [:div[0m
+  [36m16[0m  [36m   [:div#menu {:style {:height 100 :width "100%"}}[0m
+  [33m17[0m  [1m    [:center [:p MENU]]][0m
+  [0m  [0m  [33m                 ^--- Use of undeclared Var blocks-editor-demo.core/MENU[0m
+  [36m18[0m  [36m   [:div#blocklyDiv {:style blockly-style}]])[0m
+  [36m19[0m  [36m[0m
+  [36m20[0m  [36m(defn ^:export init![0m
+  [36m21[0m  [36m  [settings][0m
+  [36m22[0m  [36m  (reagent/render[0m
+
+[36m----  Compiler Warning : Please see /c:/Users/u15194/Desktop/Blocks-Editor-Demo/src/blocks_editor_demo/core.cljs  ----[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.387 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.351 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.375 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.35 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.357 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.369 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.345 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.363 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.331 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.366 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.343 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.327 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.35 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/app.js" in 0.355 seconds.[0m
+notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js

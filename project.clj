@@ -26,7 +26,10 @@
               {:release {:source-paths ["src"]
                          :compiler {:output-to "app/js/app.js"
                                     :output-dir "resources/public/prod/out/"
-                                    :optimizations :advanced}}
+                                    :optimizations :advanced
+                                    :externs
+                                    ["app/assets/js/javascript_compressed.js"
+                                     "app/assets/js/blockly_compressed.js"]}}
                
                :dev {:source-paths ["src" "dev/cljs/"]
                      :figwheel true
