@@ -1,4 +1,4 @@
-(ns blocks-editor-demo.core
+(ns blocks-editor.core
   (:require [reagent.core :as reagent]
             [re-frame.core :as rf]))
 
@@ -19,7 +19,7 @@
                        :width "100%"}}
     [:center [:p {:style {:position "relative"
                           :top 30
-                          :margin-bottom 0}} "MENU"]]]
+                          :margin-bottom 0}} "_super_ MENU"]]]
    [:div#blocklyDiv {:style blockly-style}]])
 
 (defn ^:export init!

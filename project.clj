@@ -1,5 +1,5 @@
-(defproject blocks-editor-demo "0.1.0-SNAPSHOT"
-  :description "A demo of an editor for visual blocks programming built with ClojureScript + Electron Edit" 
+(defproject blocks-editor "0.1.0-SNAPSHOT"
+  :description "An editor for visual blocks programming built with ClojureScript + Electron" 
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.473" :exclusions [org.apache.ant/ant]]
                  [re-frame "0.9.2"]]
@@ -11,7 +11,8 @@
 
   :profiles {:dev {:dependencies [[figwheel "0.5.9"]
                                   [figwheel-sidecar "0.5.9"]
-                                  [com.cemerick/piggieback "0.2.1"]]
+                                  [com.cemerick/piggieback "0.2.1"]
+                                  [binaryage/devtools "0.9.0"]]
 
                    :source-paths ["src" "src_tools" "dev"]}}
   
@@ -24,17 +25,20 @@
   :hooks [leiningen.cljsbuild] 
   :cljsbuild {:builds
               {:release {:source-paths ["src"]
-                         :compiler {:output-to "app/js/app.js"
-                                    :output-dir "resources/public/prod/out/"
-                                    :optimizations :advanced
-                                    :externs
-                                    ["app/assets/js/javascript_compressed.js"
-                                     "app/assets/js/blockly_compressed.js"]}}
+                         :compiler {:output-to "app/js/compiled/app.js"
+                                    :main blocks-editor.init
+                                    :optimizations :advanced}}
                
                :dev {:source-paths ["src" "dev/cljs/"]
                      :figwheel true
-                     :compiler {:output-to "app/js/app.js"
-                                :output-dir "app/js/out/"}}}}
+                     :compiler {:output-to "app/js/compiled/app.js"
+                                :output-dir "app/js/compiled/out"
+                                :asset-path "js/compiled/out"
+                                :main user.cljs
+                                :source-map-timestamp true
 
-  :clean-targets ["app/js/"])
+                                :preloads [devtools.preload]
+                                :optimizations :none}}}}
+
+  :clean-targets ["app/js/compiled/app.js"])
 

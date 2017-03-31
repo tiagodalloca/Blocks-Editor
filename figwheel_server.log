@@ -779,3 +779,25 @@ notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
 [0mCompiling "app/js/app.js" from ["src" "dev/cljs/"]...[0m
 [32mSuccessfully compiled "app/js/app.js" in 0.355 seconds.[0m
 notifying browser that file changed:  app\js\out\blocks_editor_demo\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 0.829 seconds.[0m
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\init.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 4.093 seconds.[0m
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\user\cljs.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 0.778 seconds.[0m
+notifying browser that file changed:  app\js\compiled\out\user\cljs.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 0.687 seconds.[0m
+notifying browser that file changed:  app\js\compiled\out\user\cljs.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 0.934 seconds.[0m
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 0.974 seconds.[0m
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js

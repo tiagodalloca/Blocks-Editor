@@ -1,20 +1,10 @@
 const {app, BrowserWindow} = require('electron');
 const path = require('path');
 const url = require('url');
-const less = require('gulp-less');
-const gulp = require('gulp');
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let win
-
-gulp.task('less', function () {
-		return gulp.src('./assets/styles/less/*.less')
-				.pipe(less({
-						paths: [ path.join(__dirname, 'less', 'includes') ]
-				}))
-				.pipe(gulp.dest('./assets/styles/'));
-});
 
 function createWindow () {
   // Create the browser window.
