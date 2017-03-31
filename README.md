@@ -1,2 +1,2 @@
-# Blocks Editor Demo
-A demo of an editor for visual blocks programming built with ClojureScript + Electron
+# Blocks Editor
+The official repository for our Editor module of the WCC project
