@@ -1,5 +1,5 @@
 (ns blocks-editor.init
   (:require [blocks-editor.core :as c]))
 
-(c/init! {})
+(set! (.-onload js/window) #(c/init! {}))
 

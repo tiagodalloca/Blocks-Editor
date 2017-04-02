@@ -1,8 +1,7 @@
 (ns blocks-editor.core
   (:require [reagent.core :as reagent]
-            [re-frame.core :as rf]))
-
-(def blockly (js* "Blockly"))
+            [re-frame.core :as rf]
+            [blockly.core :as b]))
 
 (def blockly-style {:height 600
                     :width "100%"})
@@ -19,7 +18,9 @@
                        :width "100%"}}
     [:center [:p {:style {:position "relative"
                           :top 30
-                          :margin-bottom 0}} "_super_ MENU"]]]
+                          :margin-bottom 0}}
+              [:em "super"]
+              "MENU"]]]
    [:div#blocklyDiv {:style blockly-style}]])
 
 (defn ^:export init!
@@ -27,7 +28,8 @@
   (reagent/render
    [ui]
    (get-e "app"))
-  (.inject blockly
-           (get-e "blocklyDiv")
-           (clj->js {:toolbox (get-e "toolbox")})))
+  ;; (.inject b/Blockly
+  ;; (get-e "blocklyDiv")
+  ;; (clj->js {:toolbox (get-e "toolbox")}))
+  )
 

@@ -12,7 +12,7 @@
   :profiles {:dev {:dependencies [[figwheel "0.5.9"]
                                   [figwheel-sidecar "0.5.9"]
                                   [com.cemerick/piggieback "0.2.1"]
-                                  [binaryage/devtools "0.9.0"]]
+                                  [binaryage/devtools "0.9.2"]]
 
                    :source-paths ["src" "src_tools" "dev"]}}
   
@@ -27,18 +27,35 @@
               {:release {:source-paths ["src"]
                          :compiler {:output-to "app/js/compiled/app.js"
                                     :main blocks-editor.init
+
+                                    :foreign-libs [{:file "app/js/dependencies/blockly_compressed.js"
+                                                    :provides ["blockly.core"]
+                                                    :requires ["blockly.blocks" "blockly.langs.en"]}
+                                                   {:file "app/js/dependencies/blocks_compressed.js"
+                                                    :provides ["blockly.blocks"]}
+                                                   {:file "app/js/dependencies/en.js"
+                                                    :provides ["blockly.langs.en"]}]
+                                    :externs ["app/js/dependencies/blockly_compressed.js" "app/js/dependencies/blocks_compressed.js" "app/js/dependencies/en.js"]
+                                    
                                     :optimizations :advanced}}
                
                :dev {:source-paths ["src" "dev/cljs/"]
                      :figwheel true
                      :compiler {:output-to "app/js/compiled/app.js"
                                 :output-dir "app/js/compiled/out"
-                                :asset-path "js/compiled/out"
                                 :main user.cljs
-                                :source-map-timestamp true
+                                :foreign-libs [{:file "app/js/dependencies/blockly_compressed.js"
+                                                :provides ["blockly.core"]}
+                                               {:file "app/js/dependencies/blocks_compressed.js"
+                                                :provides ["blockly.blocks"]}
+                                               {:file "app/js/dependencies/en.js"
+                                                :provides ["blockly.langs.en"]}]
+                                :externs ["app/js/dependencies/blockly_compressed.js" "app/js/dependencies/blocks_compressed.js" "app/js/dependencies/en.js"]
 
+                                :asset-path "js/compiled/out"
+                                :source-map-timestamp true
                                 :preloads [devtools.preload]
                                 :optimizations :none}}}}
 
-  :clean-targets ["app/js/compiled/app.js"])
+  :clean-targets ^{:protect false} ["app/js/compiled"])
 

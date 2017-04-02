@@ -801,3 +801,436 @@ notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
 [0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
 [32mSuccessfully compiled "app/js/compiled/app.js" in 0.974 seconds.[0m
 notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 1.712 seconds.[0m
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\user\cljs.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 1.378 seconds.[0m
+notifying browser that file changed:  app\js\compiled\out\user\cljs.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 1.471 seconds.[0m
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\user\cljs.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 2.103 seconds.[0m
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 2.005 seconds.[0m
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 4.753 seconds.[0m
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 5.897 seconds.[0m
+notifying browser that file changed:  app/js/compiled/app.js
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\user\cljs.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 3.15 seconds.[0m
+notifying browser that file changed:  app\js\compiled\out\user\cljs.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 3.49 seconds.[0m
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 4.601 seconds.[0m
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 3.105 seconds.[0m
+notifying browser that file changed:  app\js\compiled\out\user\cljs.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+WARNING: preload namespace user.cljs does not exist
+[32mSuccessfully compiled "app/js/compiled/app.js" in 2.308 seconds.[0m
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\user\cljs.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+WARNING: preload namespace user.cljs does not exist
+[32mSuccessfully compiled "app/js/compiled/app.js" in 2.108 seconds.[0m
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+WARNING: preload namespace user.cljs does not exist
+[32mSuccessfully compiled "app/js/compiled/app.js" in 1.757 seconds.[0m
+notifying browser that file changed:  app\js\compiled\out\user\cljs.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+WARNING: preload namespace user.cljs does not exist
+[32mSuccessfully compiled "app/js/compiled/app.js" in 1.792 seconds.[0m
+notifying browser that file changed:  app\js\compiled\out\user\cljs.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 3.753 seconds.[0m
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\user\cljs.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 1.331 seconds.[0m
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\user\cljs.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 1.532 seconds.[0m
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\user\cljs.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 1.426 seconds.[0m
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\user\cljs.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[31mFailed to compile "app/js/compiled/app.js" in 1.629 seconds.[0m
+[36m----  Could not Analyze  /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/init.cljs   line:4  column:1  ----[0m
+
+  [1mUnknown dot form of (. js/window -onload ((fn* [] (c/init! {})))) with classification [:cljs.analyzer/expr :cljs.analyzer/property :cljs.analyzer/expr][0m
+
+  [36m2[0m  [36m  (:require [blocks-editor.core :as c]))[0m
+  [36m3[0m  [36m[0m
+  [33m4[0m  [1m(.-onload js/window #(c/init! {}))[0m
+  [0m [0m  [33m^--- Unknown dot form of (. js/window -onload ((fn* [] (c/init! {})))) with classification [:cljs.analyzer/expr :cljs.analyzer/property :cljs.analyzer/expr][0m
+
+[36m----  Analysis Error : Please see /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/init.cljs  ----[0m
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[31mFailed to compile "app/js/compiled/app.js" in 1.403 seconds.[0m
+[36m----  Could not Analyze  /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/init.cljs   line:4  column:1  ----[0m
+
+  [1mUnknown dot form of (. (js* window) -onload ((fn* [] (c/init! {})))) with classification [:cljs.analyzer/expr :cljs.analyzer/property :cljs.analyzer/expr][0m
+
+  [36m2[0m  [36m  (:require [blocks-editor.core :as c]))[0m
+  [36m3[0m  [36m[0m
+  [33m4[0m  [1m(.-onload (js* window) #(c/init! {}))[0m
+  [0m [0m  [33m^--- Unknown dot form of (. (js* window) -onload ((fn* [] (c/init! {})))) with classification [:cljs.analyzer/expr :cljs.analyzer/property :cljs.analyzer/expr][0m
+
+[36m----  Analysis Error : Please see /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/init.cljs  ----[0m
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[31mFailed to compile "app/js/compiled/app.js" in 0.854 seconds.[0m
+[36m----  Could not Analyze  /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/init.cljs   line:4  column:1  ----[0m
+
+  [1mUnknown dot form of (. (js* "window") -onload ((fn* [] (c/init! {})))) with classification [:cljs.analyzer/expr :cljs.analyzer/property :cljs.analyzer/expr][0m
+
+  [36m2[0m  [36m  (:require [blocks-editor.core :as c]))[0m
+  [36m3[0m  [36m[0m
+  [33m4[0m  [1m(.-onload (js* "window") #(c/init! {}))[0m
+  [0m [0m  [33m^--- Unknown dot form of (. (js* "window") -onload ((fn* [] (c/init! {})))) with classification [:cljs.analyzer/expr :cljs.analyzer/property :cljs.analyzer/expr][0m
+
+[36m----  Analysis Error : Please see /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/init.cljs  ----[0m
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 1.715 seconds.[0m
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\init.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 1.545 seconds.[0m
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 1.366 seconds.[0m
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 1.515 seconds.[0m
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[31mFailed to compile "app/js/compiled/app.js" in 0.864 seconds.[0m
+[36m----  Could not Analyze  src/blocks_editor/core.cljs   line:5  column:1  ----[0m
+
+  [1mclojure.lang.PersistentList cannot be cast to clojure.lang.Named[0m
+
+  [36m3[0m  [36m            [re-frame.core :as rf]))[0m
+  [36m4[0m  [36m[0m
+  [33m5[0m  [1m(def (atom nil))[0m
+  [0m [0m  [33m^--- clojure.lang.PersistentList cannot be cast to clojure.lang.Named[0m
+  [36m6[0m  [36m[0m
+  [36m7[0m  [36m(def blockly-style {:height 600[0m
+  [36m8[0m  [36m                    :width "100%"})[0m
+
+[36m----  Analysis Error : Please see src/blocks_editor/core.cljs  ----[0m
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 1.576 seconds.[0m
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 1.418 seconds.[0m
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[31mFailed to compile "app/js/compiled/app.js" in 0.92 seconds.[0m
+[36m----  Could not Analyze  src/blocks_editor/core.cljs   line:27  column:17  ----[0m
+
+  [1mInvalid js* form at line 27 C:\Users\Tiago\Documents\Programacao\Clojure\Blocks-Editor\src\blocks_editor\core.cljs[0m
+
+  [36m25[0m  [36m(defn ^:export init![0m
+  [36m26[0m  [36m  [settings][0m
+  [33m27[0m  [1m  (set! blockly (js* Blockly))[0m
+  [0m  [0m  [33m                ^--- Invalid js* form at line 27 C:\Users\Tiago\Documents\Programacao\Clojure\Blocks-Editor\src\blocks_editor\core.cljs[0m
+  [36m28[0m  [36m  (reagent/render[0m
+  [36m29[0m  [36m   [ui][0m
+  [36m30[0m  [36m   (get-e "app"))[0m
+
+[36m----  Analysis Error : Please see src/blocks_editor/core.cljs  ----[0m
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 1.381 seconds.[0m
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 1.35 seconds.[0m
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 1.239 seconds.[0m
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\init.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 1.356 seconds.[0m
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\init.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 1.527 seconds.[0m
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 2.89 seconds.[0m
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 2.146 seconds.[0m
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 48.541 seconds.[0m
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 1.831 seconds.[0m
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 3.314 seconds.[0m
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\user\cljs.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 387.398 seconds.[0m
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[36m----  Compiler Warning on   /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs   line:30  column:12  ----[0m
+
+  [1mNo such namespace: blockly, could not locate blockly.cljs, blockly.cljc, or Closure namespace ""[0m
+
+  [36m26[0m  [36m[settings][0m
+  [36m27[0m  [36m(reagent/render[0m
+  [36m28[0m  [36m [ui][0m
+  [36m29[0m  [36m (get-e "app"))[0m
+  [33m30[0m  [1m(.inject blockly/Blockly[0m
+  [0m  [0m  [33m         ^--- No such namespace: blockly, could not locate blockly.cljs, blockly.cljc, or Closure namespace ""[0m
+  [36m31[0m  [36m         (get-e "blocklyDiv")[0m
+  [36m32[0m  [36m         (clj->js {:toolbox (get-e "toolbox")})))[0m
+
+[36m----  Compiler Warning : Please see /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs  ----[0m
+[36m----  Compiler Warning on   /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs   line:30  column:12  ----[0m
+
+  [1mUse of undeclared Var blockly/Blockly[0m
+
+  [36m26[0m  [36m[settings][0m
+  [36m27[0m  [36m(reagent/render[0m
+  [36m28[0m  [36m [ui][0m
+  [36m29[0m  [36m (get-e "app"))[0m
+  [33m30[0m  [1m(.inject blockly/Blockly[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var blockly/Blockly[0m
+  [36m31[0m  [36m         (get-e "blocklyDiv")[0m
+  [36m32[0m  [36m         (clj->js {:toolbox (get-e "toolbox")})))[0m
+
+[36m----  Compiler Warning : Please see /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs  ----[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 1.868 seconds.[0m
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[36m----  Compiler Warning on   /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs   line:30  column:12  ----[0m
+
+  [1mNo such namespace: b, could not locate b.cljs, b.cljc, or Closure namespace ""[0m
+
+  [36m26[0m  [36m[settings][0m
+  [36m27[0m  [36m(reagent/render[0m
+  [36m28[0m  [36m [ui][0m
+  [36m29[0m  [36m (get-e "app"))[0m
+  [33m30[0m  [1m(.inject b/Blockly[0m
+  [0m  [0m  [33m         ^--- No such namespace: b, could not locate b.cljs, b.cljc, or Closure namespace ""[0m
+  [36m31[0m  [36m         (get-e "blocklyDiv")[0m
+  [36m32[0m  [36m         (clj->js {:toolbox (get-e "toolbox")})))[0m
+
+[36m----  Compiler Warning : Please see /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs  ----[0m
+[36m----  Compiler Warning on   /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs   line:30  column:12  ----[0m
+
+  [1mUse of undeclared Var b/Blockly[0m
+
+  [36m26[0m  [36m[settings][0m
+  [36m27[0m  [36m(reagent/render[0m
+  [36m28[0m  [36m [ui][0m
+  [36m29[0m  [36m (get-e "app"))[0m
+  [33m30[0m  [1m(.inject b/Blockly[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var b/Blockly[0m
+  [36m31[0m  [36m         (get-e "blocklyDiv")[0m
+  [36m32[0m  [36m         (clj->js {:toolbox (get-e "toolbox")})))[0m
+
+[36m----  Compiler Warning : Please see /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs  ----[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 1.73 seconds.[0m
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[31mFailed to compile "app/js/compiled/app.js" in 0.929 seconds.[0m
+[36m----  Could not Analyze  /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs  ----[0m
+
+  [1mNo such namespace: blockly.core, could not locate blockly/core.cljs, blockly/core.cljc, or Closure namespace "blockly.core" [0m
+
+[36m----  Analysis Error : Please see /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs  ----[0m
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[31mFailed to compile "app/js/compiled/app.js" in 0.824 seconds.[0m
+[36m----  Could not Analyze  /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs  ----[0m
+
+  [1mNo such namespace: blockly.core, could not locate blockly/core.cljs, blockly/core.cljc, or Closure namespace "blockly.core" [0m
+
+[36m----  Analysis Error : Please see /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs  ----[0m
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[31mFailed to compile "app/js/compiled/app.js" in 0.973 seconds.[0m
+[36m----  Could not Analyze  src/blocks_editor/core.cljs  ----[0m
+
+  [1mNo such namespace: blockly.core, could not locate blockly/core.cljs, blockly/core.cljc, or Closure namespace "blockly.core" [0m
+
+[36m----  Analysis Error : Please see src/blocks_editor/core.cljs  ----[0m
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 1.591 seconds.[0m
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 1.592 seconds.[0m
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[31mFailed to compile "app/js/compiled/app.js" in 0.309 seconds.[0m
+[36m----  Could not Analyze  /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs   line:1  column:1  ----[0m
+
+  [1mOnly lib.ns.Ctor or [lib.ns Ctor*] spec supported in :import; offending spec: [blockly.blocks :as bb] at line 1 src\blocks_editor\core.cljs[0m
+
+  [33m1[0m  [1m(ns blocks-editor.core[0m
+  [0m [0m  [33m^--- Only lib.ns.Ctor or [lib.ns Ctor*] spec supported in :import; offending spec: [blockly.blocks :as bb] at line 1 src\blocks_editor\core.cljs[0m
+  [36m2[0m  [36m  (:require [reagent.core :as reagent][0m
+  [36m3[0m  [36m            [re-frame.core :as rf][0m
+  [36m4[0m  [36m            [blockly.core :as b])[0m
+
+[36m----  Analysis Error : Please see /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs  ----[0m
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[31mFailed to compile "app/js/compiled/app.js" in 1.558 seconds.[0m
+[36m----  Could not Analyze  /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs  ----[0m
+
+  [1mNo such namespace: Blockly, could not locate Blockly.cljs, Blockly.cljc, or Closure namespace "Blockly" [0m
+
+[36m----  Analysis Error : Please see /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs  ----[0m
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[31mFailed to compile "app/js/compiled/app.js" in 0.785 seconds.[0m
+[36m----  Could not Analyze  /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs  ----[0m
+
+  [1mNo such namespace: Blockly, could not locate Blockly.cljs, Blockly.cljc, or Closure namespace "Blockly" [0m
+
+[36m----  Analysis Error : Please see /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs  ----[0m
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[31mFailed to compile "app/js/compiled/app.js" in 0.98 seconds.[0m
+[36m----  Could not Analyze  /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs  ----[0m
+
+  [1mNo such namespace: Blockly.core, could not locate Blockly/core.cljs, Blockly/core.cljc, or Closure namespace "Blockly.core" [0m
+
+[36m----  Analysis Error : Please see /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs  ----[0m
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[31mFailed to compile "app/js/compiled/app.js" in 0.775 seconds.[0m
+[36m----  Could not Analyze  /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs  ----[0m
+
+  [1mNo such namespace: Blockly, could not locate Blockly.cljs, Blockly.cljc, or Closure namespace "Blockly" [0m
+
+[36m----  Analysis Error : Please see /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs  ----[0m
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[31mFailed to compile "app/js/compiled/app.js" in 0.823 seconds.[0m
+[36m----  Could not Analyze  /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs  ----[0m
+
+  [1mNo such namespace: Blockly, could not locate Blockly.cljs, Blockly.cljc, or Closure namespace "Blockly" [0m
+
+[36m----  Analysis Error : Please see /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs  ----[0m
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[31mFailed to compile "app/js/compiled/app.js" in 0.993 seconds.[0m
+[36m----  Could not Analyze  src/blocks_editor/core.cljs  ----[0m
+
+  [1mNo such namespace: Blockly, could not locate Blockly.cljs, Blockly.cljc, or Closure namespace "Blockly" [0m
+
+[36m----  Analysis Error : Please see src/blocks_editor/core.cljs  ----[0m
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[31mFailed to compile "app/js/compiled/app.js" in 0.779 seconds.[0m
+[36m----  Could not Analyze  /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs  ----[0m
+
+  [1mNo such namespace: Blockly.core, could not locate Blockly/core.cljs, Blockly/core.cljc, or Closure namespace "Blockly.core" [0m
+
+[36m----  Analysis Error : Please see /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs  ----[0m
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[36m----  Compiler Warning on   src/blocks_editor/core.cljs   line:30  column:4  ----[0m
+
+  [1mNo such namespace: b, could not locate b.cljs, b.cljc, or Closure namespace ""[0m
+
+  [36m26[0m  [36m[settings][0m
+  [36m27[0m  [36m(reagent/render[0m
+  [36m28[0m  [36m [ui][0m
+  [36m29[0m  [36m (get-e "app"))[0m
+  [33m30[0m  [1m(b/inject[0m
+  [0m  [0m  [33m ^--- No such namespace: b, could not locate b.cljs, b.cljc, or Closure namespace ""[0m
+  [36m31[0m  [36m (get-e "blocklyDiv")[0m
+  [36m32[0m  [36m (clj->js {:toolbox (get-e "toolbox")})))[0m
+
+[36m----  Compiler Warning : Please see src/blocks_editor/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/blocks_editor/core.cljs   line:30  column:4  ----[0m
+
+  [1mUse of undeclared Var b/inject[0m
+
+  [36m26[0m  [36m[settings][0m
+  [36m27[0m  [36m(reagent/render[0m
+  [36m28[0m  [36m [ui][0m
+  [36m29[0m  [36m (get-e "app"))[0m
+  [33m30[0m  [1m(b/inject[0m
+  [0m  [0m  [33m ^--- Use of undeclared Var b/inject[0m
+  [36m31[0m  [36m (get-e "blocklyDiv")[0m
+  [36m32[0m  [36m (clj->js {:toolbox (get-e "toolbox")})))[0m
+
+[36m----  Compiler Warning : Please see src/blocks_editor/core.cljs  ----[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 2.443 seconds.[0m
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 1.497 seconds.[0m
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 2.91 seconds.[0m
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[31mFailed to compile "app/js/compiled/app.js" in 11.945 seconds.[0m
+[36m----  Could not Read  /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs   line:1  column:1  ----[0m
+
+  [1mEOF while reading, starting at line 1 and column 1[0m
+
+  [33m1[0m  [1m(ns blocks-editor.core[0m
+  [0m [0m  [33m^--- EOF while reading, starting at line 1 and column 1[0m
+  [36m2[0m  [36m  (:require [reagent.core :as reagent][0m
+  [36m3[0m  [36m            [re-frame.core :as rf][0m
+  [36m4[0m  [36m            ;; [blockly.core :as b])[0m
+
+[36m----  Reader Error : Please see /c:/Users/Tiago/Documents/Programacao/Clojure/Blocks-Editor/src/blocks_editor/core.cljs  ----[0m
+[0mCompiling "app/js/compiled/app.js" from ["src" "dev/cljs/"]...[0m
+[32mSuccessfully compiled "app/js/compiled/app.js" in 69.863 seconds.[0m
+notifying browser that file changed:  app/js/compiled/out/goog/deps.js
+notifying browser that file changed:  app/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  app\js\compiled\out\blocks_editor\core.js
