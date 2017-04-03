@@ -19,7 +19,7 @@
     [:center [:p {:style {:position "relative"
                           :top 30
                           :margin-bottom 0}}
-              [:em "super"]
+              [:em "super  "]
               "MENU"]]]
    [:div#blocklyDiv {:style blockly-style}]])
 
@@ -28,8 +28,7 @@
   (reagent/render
    [ui]
    (get-e "app"))
-  ;; (.inject b/Blockly
-  ;; (get-e "blocklyDiv")
-  ;; (clj->js {:toolbox (get-e "toolbox")}))
-  )
+  (.inject js/Blockly
+           (get-e "blocklyDiv")
+           (clj->js {:toolbox (get-e "toolbox")})))
 

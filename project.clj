@@ -14,12 +14,11 @@
                                   [com.cemerick/piggieback "0.2.1"]
                                   [binaryage/devtools "0.9.2"]]
 
-                   :source-paths ["src" "src_tools" "dev"]}}
+                   :source-paths ["src" "dev"]}}
   
   :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
 
-  :figwheel {:http-server-root "public"
-             :ring-handler figwheel-middleware/app
+  :figwheel {:http-server-root "public" 
              :server-port 3449}
   
   :hooks [leiningen.cljsbuild] 
