@@ -1,8 +1,12 @@
 (ns blocks-editor.core
   (:require [reagent.core :as reagent]
-            [re-frame.core :as rf]
-            [blockly.core :as b]
-            [blocks-editor.view :as v]))
+            [re-frame.core :as rf] 
+            [blocks-editor.view :as v]
+
+            [Blockly :as b])
+  (:import [Blockly
+            Blocks
+            Msg.en]))
 
 (defn get-e [s]
   (js/document.getElementById s))
@@ -12,7 +16,6 @@
   (reagent/render
    [v/ui]
    (get-e "app"))
-  (.inject js/Blockly
-           (get-e "blocklyDiv")
-           (clj->js {:toolbox (get-e "toolbox")})))
+  (b/inject (get-e "blocklyDiv")
+            (clj->js {:toolbox (get-e "toolbox")})))
 

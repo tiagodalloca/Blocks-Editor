@@ -17,40 +17,22 @@
                    :source-paths ["src" "dev"]}}
   
   :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
-
-  :figwheel {:http-server-root "public" 
-             :server-port 3449}
   
   :hooks [leiningen.cljsbuild] 
   :cljsbuild {:builds
               {:release {:source-paths ["src"]
-                         :compiler {:output-to "app/js/compiled/app.js"
-                                    :main blocks-editor.init
-
-                                    :foreign-libs [{:file "app/js/dependencies/blockly_compressed.js"
-                                                    :provides ["blockly.core"]
-                                                    :requires ["blockly.blocks" "blockly.langs.en"]}
-                                                   {:file "app/js/dependencies/blocks_compressed.js"
-                                                    :provides ["blockly.blocks"]}
-                                                   {:file "app/js/dependencies/en.js"
-                                                    :provides ["blockly.langs.en"]}]
-                                    :externs ["app/js/dependencies/blockly_compressed.js" "app/js/dependencies/blocks_compressed.js" "app/js/dependencies/en.js"]
-                                    
+                         :compiler {:main blocks-editor.init
+                                    :output-to "app/js/compiled/app.js"
+                                    :libs ["app/js/dependencies/google-blockly"]
+                                    :asset-path "js/compiled/out"
                                     :optimizations :advanced}}
                
                :dev {:source-paths ["src" "dev/cljs/"]
                      :figwheel true
-                     :compiler {:output-to "app/js/compiled/app.js"
-                                :output-dir "app/js/compiled/out"
-                                :main user.cljs
-                                :foreign-libs [{:file "app/js/dependencies/blockly_compressed.js"
-                                                :provides ["blockly.core"]}
-                                               {:file "app/js/dependencies/blocks_compressed.js"
-                                                :provides ["blockly.blocks"]}
-                                               {:file "app/js/dependencies/en.js"
-                                                :provides ["blockly.langs.en"]}]
-                                :externs ["app/js/dependencies/blockly_compressed.js" "app/js/dependencies/blocks_compressed.js" "app/js/dependencies/en.js"]
-
+                     :compiler {:main user.cljs
+                                :output-to "app/js/compiled/app.js"
+                                :output-dir "app/js/compiled/out" 
+                                :libs ["app/js/dependencies/google-blockly"]
                                 :asset-path "js/compiled/out"
                                 :source-map-timestamp true
                                 :preloads [devtools.preload]
