@@ -3,10 +3,7 @@
             [re-frame.core :as rf] 
             [blocks-editor.view :as v]
 
-            [Blockly :as b])
-  (:import [Blockly
-            Blocks
-            Msg.en]))
+            [Blockly :as b]))
 
 (defn get-e [s]
   (js/document.getElementById s))
@@ -16,6 +13,7 @@
   (reagent/render
    [v/ui]
    (get-e "app"))
-  (b/inject (get-e "blocklyDiv")
-            (clj->js {:toolbox (get-e "toolbox")})))
+  (.done (.ajax js/$ (clj->js {:url "assets/xml/toolbar.xml"}))
+         #(b/inject (get-e "blocklyDiv")
+                    (clj->js {:toolbox %}))))
 

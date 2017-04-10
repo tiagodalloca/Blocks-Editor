@@ -32,7 +32,7 @@
                      :compiler {:main user.cljs
                                 :output-to "app/js/compiled/app.js"
                                 :output-dir "app/js/compiled/out" 
-                                :libs ["app/js/dependencies/google-blockly"]
+                                :libs ["app/js/dependencies/google-blockly"] 
                                 :asset-path "js/compiled/out"
                                 :source-map-timestamp true
                                 :preloads [devtools.preload]
