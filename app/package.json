@@ -3,7 +3,9 @@
 		"version": "0.1.0",
 		"main": "main.js",
 		"devDependencies": {
-				"google-closure-compiler-js": "^20170218.0.0"
+				"google-closure-compiler-js": "^20170218.0.0",
+				"bootstrap": "^3.3.7",
+				"jquery": "^3.1.0"
 		}
 }
 

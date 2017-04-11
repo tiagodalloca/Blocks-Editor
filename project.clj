@@ -17,6 +17,8 @@
                    :source-paths ["src" "dev"]}}
   
   :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
+
+  :figwheel {:on-jsload user.cljs/reload}
   
   :hooks [leiningen.cljsbuild] 
   :cljsbuild {:builds

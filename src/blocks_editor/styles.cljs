@@ -1,10 +1,19 @@
 (ns blocks-editor.styles)
 
-(def blockly {:height 600
-              :width "100%"})
+(def blockly {:class "row"
+              :style {:height 600}})
 
-(def menu {:style {:position "relative"
-                   :top 0
-                   :height 100
-                   :width "100%"}})
+(defn col-size
+  [size device]
+  (str "col-" device "-" size " "))
+
+(def menu {:class "row"
+           :style {:margin-top "15px"
+                   :margin-bottom "15px"}})
+
+(defn menu-button
+  [size]
+  (let [col-size (partial col-size size)
+        classes (str "btn " (col-size "sm") (col-size "md"))]
+    {:class classes}))
 

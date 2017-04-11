@@ -9,3 +9,7 @@
 
 (set! (.-onload js/window) #(c/init! {}))
 
+(defn ^:export reload
+  []
+  (c/init! {}))
+

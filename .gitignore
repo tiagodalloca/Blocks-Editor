@@ -21,6 +21,7 @@ app/js/
 electron/*
 *.nrepl-port
 figwheel-server.log
+figwheel_server.log
 
 # Logs
 logs
