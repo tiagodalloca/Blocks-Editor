@@ -17,24 +17,22 @@
                    :source-paths ["src" "dev"]}}
   
   :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
-
-  :figwheel {:on-jsload user.cljs/reload}
   
   :hooks [leiningen.cljsbuild] 
   :cljsbuild {:builds
               {:release {:source-paths ["src"]
                          :compiler {:main blocks-editor.init
                                     :output-to "app/js/compiled/app.js"
-                                    :libs ["app/js/dependencies/google-blockly"]
+                                    :libs ["app/node_modules/blockly/"]
                                     :asset-path "js/compiled/out"
                                     :optimizations :advanced}}
                
                :dev {:source-paths ["src" "dev/cljs/"]
-                     :figwheel true
+                     :figwheel {:on-jsload user.cljs/reload}
                      :compiler {:main user.cljs
                                 :output-to "app/js/compiled/app.js"
                                 :output-dir "app/js/compiled/out" 
-                                :libs ["app/js/dependencies/google-blockly"] 
+                                :libs ["app/node_modules/blockly/"] 
                                 :asset-path "js/compiled/out"
                                 :source-map-timestamp true
                                 :preloads [devtools.preload]
