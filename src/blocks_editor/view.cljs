@@ -3,18 +3,20 @@
             [re-frame.core :as rf]
             [blocks-editor.styles :as s]))
 
+(def menu-button-size "60px")
+
 (defn menu-button
-  [label size]
-  [:button (s/menu-button size) label])
+  [icon]
+  [:button (s/menu-button menu-button-size) [:img (s/img icon)]])
 
 (defn ui
   []
-  [:div {:class "container"}
+  [:div s/body
    [:div
-    [:div#menu s/menu
-     [menu-button "Abrir" 3]
-     [menu-button "Novo" 3]
-     [menu-button "Salvar" 3]
-     [menu-button "Compilar" 3]]]
+    [:center [:nav#menu s/menu
+              [menu-button "assets/icons/open.png"]
+              [menu-button "assets/icons/new.png"]
+              [menu-button "assets/icons/save.png"]
+              [menu-button "assets/icons/compile.png"]]]]
    [:div#blocklyDiv s/blockly]])
 
