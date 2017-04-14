@@ -4,19 +4,39 @@
             [blocks-editor.view :as v]
 
             [Blockly :as b])
-  (:import [Blockly
-            Blocks
-            Msg.en]))
+  (:import [Blockly.Blocks
+            loops logic procedures math texts variables lists colour]
+           [Blockly.Msg en]))
 
-(defn get-e [s]
-  (js/document.getElementById s))
+
+(re-frame.core/reg-event-db
+ :new-file
+ (fn [db [_ _]] 
+   (js/alert "NEW FILE")))
+
+(re-frame.core/reg-event-db
+ :open-file
+ (fn [db [_ _]] 
+   (js/alert "OPEN FILE")))
+
+(re-frame.core/reg-event-db
+ :save-file
+ (fn [db [_ _]] 
+   (js/alert "SAVE FILE")))
+
+(re-frame.core/reg-event-db
+ :compile
+ (fn [db [_ _]] 
+   (js/alert "COMPILE")))
+
+
 
 (defn ^:export init!
   [settings]
   (reagent/render
    [v/ui]
-   (get-e "app")) 
+   (js/$ "app")) 
   (doto (.ajax js/$ (clj->js  {:url "assets/xml/toolbox.xml"}))
-    (.done #(b/inject (get-e "blocklyDiv")
+    (.done #(b/inject (js/$ "#blocklyDiv")
                       (clj->js {:toolbox %})))))
 
