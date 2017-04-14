@@ -35,8 +35,8 @@
   [settings]
   (reagent/render
    [v/ui]
-   (js/$ "app")) 
+   (-> "#app" js/$ (aget 0))) 
   (doto (.ajax js/$ (clj->js  {:url "assets/xml/toolbox.xml"}))
-    (.done #(b/inject (js/$ "#blocklyDiv")
+    (.done #(b/inject (-> "#blocklyDiv" js/$ (aget 0))
                       (clj->js {:toolbox %})))))
 
