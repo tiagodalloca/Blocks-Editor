@@ -1,4 +1,4 @@
-(ns user.cljs
+(ns cljs.user
   (:require [figwheel.client :as fw :include-macros true]
             [blocks-editor.core :as c]))
 

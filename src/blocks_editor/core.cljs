@@ -3,33 +3,12 @@
             [re-frame.core :as rf] 
             [blocks-editor.view :as v]
 
-            [Blockly :as b])
+            [Blockly :as b])  
   (:import [Blockly.Blocks
             loops logic procedures math texts variables lists colour]
            [Blockly.Msg en]))
 
-
-(re-frame.core/reg-event-db
- :new-file
- (fn [db [_ _]] 
-   (js/alert "NEW FILE")))
-
-(re-frame.core/reg-event-db
- :open-file
- (fn [db [_ _]] 
-   (js/alert "OPEN FILE")))
-
-(re-frame.core/reg-event-db
- :save-file
- (fn [db [_ _]] 
-   (js/alert "SAVE FILE")))
-
-(re-frame.core/reg-event-db
- :compile
- (fn [db [_ _]] 
-   (js/alert "COMPILE")))
-
-
+(def workspace (atom nil))
 
 (defn ^:export init!
   [settings]
@@ -37,6 +16,8 @@
    [v/ui]
    (-> "#app" js/$ (aget 0))) 
   (doto (.ajax js/$ (clj->js  {:url "assets/xml/toolbox.xml"}))
-    (.done #(b/inject (-> "#blocklyDiv" js/$ (aget 0))
-                      (clj->js {:toolbox %})))))
+    (.done #(do (set! workspace (-> "#blocklyDiv" js/$ (aget 0)
+                                    (b/inject
+                                     (clj->js {:toolbox %}))))
+                (rf/dispatch [:init-db {}])))))
 

@@ -28,8 +28,8 @@
                                     :optimizations :advanced}}
                
                :dev {:source-paths ["src" "dev/cljs/"]
-                     :figwheel {:on-jsload user.cljs/reload}
-                     :compiler {:main user.cljs
+                     :figwheel {:on-jsload "cljs.user/reload"}
+                     :compiler {:main cljs.user
                                 :output-to "app/js/compiled/app.js"
                                 :output-dir "app/js/compiled/out" 
                                 :libs ["app/node_modules/blockly/"] 
