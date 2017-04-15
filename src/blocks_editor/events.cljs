@@ -2,22 +2,16 @@
   (:require [re-frame.core :as rf]
             [blocks-editor.core :as c]
             
-            [Blockly.Xml :as bx]
-            [cljs.nodejs :as jsn]))
+            [Blockly.Xml :as bx]))
 
-(defonce electron (jsn/require "electron"))
-(defonce dialog (.-remote electron))
-(defonce fs (jsn/require "fs"))
+(def node-require (js* "require"))
+
+(defonce dialog (->"electron" node-require .-remote .-dialog))
+(defonce fs (node-require "fs"))
 
 (rf/reg-event-db
  :init-db
  (fn [_ [_ v]] v))
-
-(rf/reg-event-db
- :new-file
- (fn [db [_ _]] 
-   (js/alert
-    "NEW FILE")))
 
 (rf/reg-event-db
  :open-file
