@@ -9,7 +9,8 @@
 
 (set! (.-onload js/window) #(c/init! {}))
 
-(defn ^:export reload
+(defn reload
   []
+  (js/alert "Reloaded")
   (c/init! {}))
 

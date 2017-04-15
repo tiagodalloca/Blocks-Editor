@@ -6,23 +6,27 @@
 (def menu-button-size "60px")
 
 (defn menu-button
-  [icon event]
-  [:button (merge {:on-click #(rf/dispatch [event])}
-                  (s/menu-button menu-button-size))
+  [icon tip event]
+  [:button (assoc (s/menu-button menu-button-size)
+                  :title tip
+                  :on-click #(rf/dispatch [event]))
    [:img (s/img icon)]])
 
 (defn ui
   []
   [:div s/body
-   [:div
-    [:center [:nav#menu s/menu
-              [menu-button "assets/icons/open.png"
-               :open-file]
-              [menu-button "assets/icons/new.png"
-               :new-file]
-              [menu-button "assets/icons/save.png"
-               :save-file]
-              [menu-button "assets/icons/compile.png"
-               :compile]]]]
+   [:div [:div#menu s/menu
+          [menu-button "assets/icons/open.png"
+           "Open file"
+           :open-file]
+          [menu-button "assets/icons/new.png"
+           "New file"
+           :new-file]
+          [menu-button "assets/icons/save.png"
+           "Save file"
+           :save-file]
+          [menu-button "assets/icons/compile.png"
+           "Compile file"
+           :compile]]]
    [:div#blocklyDiv s/blockly]])
 

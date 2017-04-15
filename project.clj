@@ -22,14 +22,16 @@
   :cljsbuild {:builds
               {:release {:source-paths ["src"]
                          :compiler {:main blocks-editor.init
+                                    :target :nodejs
                                     :output-to "app/js/compiled/app.js"
                                     :libs ["app/node_modules/blockly/"]
                                     :asset-path "js/compiled/out"
                                     :optimizations :advanced}}
                
                :dev {:source-paths ["src" "dev/cljs/"]
-                     :figwheel {:on-jsload "cljs.user/reload"}
+                     :figwheel {:on-jsload cljs.user/reload}
                      :compiler {:main cljs.user
+                                :target :nodejs
                                 :output-to "app/js/compiled/app.js"
                                 :output-dir "app/js/compiled/out" 
                                 :libs ["app/node_modules/blockly/"] 

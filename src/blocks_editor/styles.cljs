@@ -10,7 +10,11 @@
 (def body {:class "container-fluid"
            :style {:margin-left "2px"}})
 
-(def menu {:class "navbar-fixed-top"})
+(def menu {:class "navbar-fixed-top container-fluid"
+           :style {:right "0px"
+                   :left "auto"
+                   :max-width "50vw"}
+           :data-delay "{ \"show\": 500, \"hide\": 100 }"})
 
 (defn menu-button
   [size]
@@ -18,7 +22,8 @@
         classes (str "btn btn-default ")]
     {:class classes
      :role "group"
-     :style {:width size}}))
+     :style {:width size}
+     :data-toggle "tooltip" :data-placement "bottom"}))
 
 (defn img
   [src]

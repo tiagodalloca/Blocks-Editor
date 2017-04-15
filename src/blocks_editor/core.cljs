@@ -8,16 +8,19 @@
             loops logic procedures math texts variables lists colour]
            [Blockly.Msg en]))
 
-(def workspace (atom nil))
+(defonce $ (js* "$"))
+
+(defonce workspace (atom nil))
 
 (defn ^:export init!
   [settings]
   (reagent/render
    [v/ui]
-   (-> "#app" js/$ (aget 0))) 
-  (doto (.ajax js/$ (clj->js  {:url "assets/xml/toolbox.xml"}))
-    (.done #(do (set! workspace (-> "#blocklyDiv" js/$ (aget 0)
+   (-> "#app" $ (aget 0)))
+  (doto (.ajax $ (clj->js  {:url "assets/xml/toolbox.xml"}))
+    (.done #(do (set! workspace (-> "#blocklyDiv" $ (aget 0)
                                     (b/inject
                                      (clj->js {:toolbox %}))))
-                (rf/dispatch [:init-db {}])))))
+                (rf/dispatch [:init-db {}]))))
+  ($ #(doto ($ "[data-toggle=\"tooltip\"]") .tooltip)))
 

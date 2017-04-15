@@ -1,8 +1,13 @@
-(ns blocks-editor.events
+(ns ^:figwheel-load blocks-editor.events
   (:require [re-frame.core :as rf]
             [blocks-editor.core :as c]
             
-            [Blockly.Xml :as bx]))
+            [Blockly.Xml :as bx]
+            [cljs.nodejs :as jsn]))
+
+(defonce electron (jsn/require "electron"))
+(defonce dialog (.-remote electron))
+(defonce fs (jsn/require "fs"))
 
 (rf/reg-event-db
  :init-db
@@ -22,11 +27,16 @@
 (rf/reg-event-db
  :save-file
  (fn [db [_ _]] 
-   (if (.-getTopBlocks c/workspace)
-     (js/alert (str "TO SAVE: \n"
-                    (-> c/workspace
-                        bx/workspaceToDom
-                        bx/domToPrettyText)))
+   (if (.-getTopBlocks c/workspace) 
+     (.showSaveDialog
+      dialog
+      #(when %
+         (.writeFile fs % (-> c/workspace
+                              bx/workspaceToDom
+                              bx/domToPrettyText)
+                     (fn [err]
+                       (when err
+                         (js/alert "Sorry, could not save your file"))))))
      (js/alert "There's no blocks to save"
                "Alert"))))
 
