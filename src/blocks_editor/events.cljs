@@ -22,7 +22,17 @@
 (rf/reg-event-db
  :open-file
  (fn [db [_ _]] 
-   (js/alert "OPEN FILE")))
+   (.showOpenDialog
+    dialog
+    #(when %
+       (.readFile fs (aget % 0) "utf-8"
+                  (fn [err content]
+                    (if-not err
+                      (-> content
+                          bx/textToDom (bx/domToWorkspace c/workspace))
+                      (js/alert (str
+                                 "Sorry, could not open your file: \n"
+                                 err)))))))))
 
 (rf/reg-event-db
  :save-file
@@ -32,8 +42,7 @@
       dialog
       #(when %
          (.writeFile fs % (-> c/workspace
-                              bx/workspaceToDom
-                              bx/domToPrettyText)
+                              bx/workspaceToDom bx/domToPrettyText)
                      (fn [err]
                        (when err
                          (js/alert "Sorry, could not save your file"))))))
