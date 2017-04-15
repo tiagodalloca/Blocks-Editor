@@ -25,6 +25,10 @@
      :style {:width size}
      :data-toggle "tooltip" :data-placement "bottom"}))
 
+(defn icon
+  [i]
+  {:class (str "glyphicon " i)})
+
 (defn img
   [src]
   {:class "image-responsive center-block"

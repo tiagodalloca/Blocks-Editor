@@ -10,23 +10,21 @@
   [:button (assoc (s/menu-button menu-button-size)
                   :title tip
                   :on-click #(rf/dispatch [event]))
-   [:img (s/img icon)]])
+   [:span (assoc (s/icon icon) :style {:font-size "30px"})]])
 
 (defn ui
   []
   [:div s/body
    [:div [:div#menu s/menu
-          [menu-button "assets/icons/open.png"
+          [menu-button "glyphicon-folder-open"
            "Open file"
            :open-file]
-          [menu-button "assets/icons/new.png"
-           "New file"
-           :new-file]
-          [menu-button "assets/icons/save.png"
+          [menu-button "glyphicon-floppy-disk"
            "Save file"
            :save-file]
-          [menu-button "assets/icons/compile.png"
+          [menu-button "glyphicon-cog"
            "Compile file"
+           "Compile"
            :compile]]]
    [:div#blocklyDiv s/blockly]])
 

@@ -11,6 +11,5 @@
 
 (defn reload
   []
-  (js/alert "Reloaded")
   (c/init! {}))
 
