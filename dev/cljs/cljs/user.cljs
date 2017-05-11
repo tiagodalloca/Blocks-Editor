@@ -1,5 +1,6 @@
 (ns cljs.user
   (:require [figwheel.client :as fw :include-macros true]
+            [blocks-editor.misc]
             [blocks-editor.events]
             [blocks-editor.core :as c]))
 

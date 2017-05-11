@@ -6,7 +6,7 @@
 
 (def node-require (js* "require"))
 
-(defonce dialog (->"electron" node-require .-remote .-dialog))
+(defonce dialog (-> "electron" node-require .-remote .-dialog))
 (defonce fs (node-require "fs"))
 
 (rf/reg-event-db

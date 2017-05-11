@@ -1,7 +1,7 @@
 (defproject blocks-editor "0.1.0-SNAPSHOT"
   :description "An editor for visual blocks programming built with ClojureScript + Electron" 
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.9.473" :exclusions [org.apache.ant/ant]]
+                 [org.clojure/clojurescript "1.9.473" :exclusions [org.apache.ant/ant]] 
                  [re-frame "0.9.2"]]
   
   :plugins [[lein-cljsbuild "1.1.5"]
