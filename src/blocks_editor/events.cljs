@@ -14,6 +14,10 @@
  (fn [_ [_ v]] v))
 
 (rf/reg-event-db
+ :app-start
+ (fn [_ [_ v]] v))
+
+(rf/reg-event-db
  :open-file
  (fn [db [_ _]] 
    (.showOpenDialog
@@ -23,7 +27,7 @@
                   (fn [err content]
                     (if-not err
                       (-> content
-                          bx/textToDom (bx/domToWorkspace c/workspace))
+                         bx/textToDom (bx/domToWorkspace c/workspace))
                       (js/alert (str
                                  "Sorry, could not open your file: \n"
                                  err)))))))))

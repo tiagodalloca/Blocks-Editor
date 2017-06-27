@@ -1,17 +1,17 @@
 (ns cljs.user
   (:require [figwheel.client :as fw :include-macros true]
-            [blocks-editor.misc]
-            [blocks-editor.events]
-            [blocks-editor.core :as c]))
+            [blocks-editor.async-events :refer [w-load-c]]
+            [cljs.core.async :as async
+             :refer [put! chan tap mult <! >! timeout close!]])
+  (:require-macros [cljs.core.async.macros
+                    :refer [go go-loop alt!]]))
 
 (enable-console-print!)
 
 (fw/watch-and-reload :websocket-url
                      "ws://localhost:3449/figwheel-ws")
 
-(set! (.-onload js/window) #(c/init! {}))
+(require '[blocks-editor.init])
 
-(defn reload
-  []
-  (c/init! {}))
+(defn reload [] (go (>! w-load-c [])))
 
