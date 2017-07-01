@@ -1,19 +1,14 @@
-(ns blocks-editor.styles)
+(ns blocks-editor.view.elements)
 
 (defn col-size
   [size device]
   (str "col-" device "-" size " "))
 
-(def blockly {:class "row"
-              :style {:height "100vh"}})
+(def blockly {:class "row be-blockly"})
 
-(def body {:class "container-fluid"
-           :style {:margin-left "2px"}})
+(def body {:class "container-fluid"})
 
-(def menu {:class "navbar-fixed-top container-fluid"
-           :style {:right "0px"
-                   :left "auto"
-                   :max-width "50vw"}
+(def menu {:class "navbar-fixed-top container-fluid be-menu" 
            :data-delay "{ \"show\": 500, \"hide\": 100 }"})
 
 (defn menu-button

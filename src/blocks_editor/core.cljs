@@ -2,8 +2,9 @@
   (:require [reagent.core :as reagent]
             [re-frame.core :as rf] 
             [blocks-editor.view :as v]
+            [blocks-editor.view.styles]
 
-            [Blockly :as b])  
+            [Blockly :as b])
   (:import [Blockly.Blocks
             loops logic procedures math texts variables lists colour]
            [Blockly.Msg en]))
@@ -19,8 +20,8 @@
    (-> "#app" $ (aget 0)))
   (doto (.ajax $ (clj->js  {:url "assets/xml/toolbox.xml"}))
     (.done #(do (set! workspace (-> "#blocklyDiv" $ (aget 0)
-                                    (b/inject
-                                     (clj->js {:toolbox %}))))
+                                   (b/inject
+                                    (clj->js {:toolbox %}))))
                 (rf/dispatch [:init-db {}]))))
   ($ #(doto ($ "[data-toggle=\"tooltip\"]") .tooltip)))
 

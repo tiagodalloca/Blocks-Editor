@@ -3,7 +3,8 @@
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.473" :exclusions [org.apache.ant/ant]]
                  [org.clojure/core.async "0.3.443"]
-                 [re-frame "0.9.2"]]
+                 [re-frame "0.9.2"]
+                 [garden "1.3.2"]]
   
   :plugins [[lein-cljsbuild "1.1.5"]
             [lein-externs "0.1.6"]
