@@ -37,27 +37,33 @@
     ret))
 
 (defn prompt-name [prompt-text default-text]
-  (go (atom (let [text @(<! (default-prompt prompt-text
-                                            default-text))]
+  (go (atom (if-some [text @(<! (default-prompt prompt-text
+                                                default-text))]
               (if (or (= bmsg/RENAME_VARIABLE text)
-                      (= bmsg/NEW_VARIABLE text))
-                nil
+                      (= bmsg/NEW_VARIABLE text)
+                      (>= (.indexOf text ",") 0))
+                ::invalid
                 text)))))
 
 (defn create-variable [workspace]
-  (go (loop []
-        (if-some
-            [text @(<! (prompt-name
-                        bmsg/NEW_VARIABLE_TITLE
-                        (str "var_" (math/randomInt 99999))))]
-          (if (not= -1 (.variableIndexOf workspace text))
-            (do (.alert window
-                        (.replace
-                         bmsg/VARIABLE_ALREADY_EXISTS
-                         "%1"
-                         (.toLowerCase text)))
-                (recur))
-            (do (.createVariable workspace text)
-                text))
-          ""))))
+  (go-loop []
+    (if-some
+        [text @(<! (prompt-name
+                    bmsg/NEW_VARIABLE_TITLE
+                    (str "var_" (math/randomInt 99999))))]
+      
+      (cond
+        (= text ::invalid) (do (.alert js/window "Invalid variable name")
+                               (recur))
+        (not= -1 (.variableIndexOf workspace text))
+        (do (.alert window
+                    (.replace
+                     bmsg/VARIABLE_ALREADY_EXISTS
+                     "%1"
+                     (.toLowerCase text)))
+            (recur))
+        :else
+        (do (.createVariable workspace text)
+            text))
+      "")))
 

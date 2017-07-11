@@ -2,7 +2,8 @@
   (:require [re-frame.core :as rf]
             [blocks-editor.core :as c]
             
-            [Blockly.Xml :as bx]))
+            [Blockly.Xml :as bx]
+            [Blockly.Variables :as bv]))
 
 (def node-require (js* "require"))
 
@@ -38,12 +39,19 @@
    (if (.-getTopBlocks c/workspace) 
      (.showSaveDialog
       dialog
-      #(when %
-         (.writeFile fs % (-> c/workspace
-                              bx/workspaceToDom bx/domToPrettyText)
-                     (fn [err]
-                       (when err
-                         (js/alert "Sorry, could not save your file"))))))
+      #(when % 
+         (let [wdom (-> c/workspace bx/workspaceToDom)
+               vars (.createElement js/document "shadow")
+               svars  (-> c/workspace bv/allUsedVariables .join)
+               tvars (.createTextNode js/document svars)]
+           (doto vars
+             (.appendChild tvars)
+             (.setAttribute "type" "variables_used")) 
+           (.insertBefore wdom vars (.-firstChild wdom))
+           (.writeFile fs % (bx/domToPrettyText wdom)
+                       (fn [err]
+                         (when err
+                           (js/alert "Sorry, could not save your file")))))))
      (js/alert "There's no blocks to save"
                "Alert"))))
 
@@ -51,3 +59,4 @@
  :compile
  (fn [db [_ _]] 
    (js/alert "COMPILE")))
+
