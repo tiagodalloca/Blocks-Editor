@@ -5,7 +5,7 @@
             [Blockly.Xml :as bx]
             [Blockly.Variables :as bv]))
 
-(def node-require (js* "require"))
+(defonce node-require (js* "require"))
 
 (defonce dialog (-> "electron" node-require .-remote .-dialog))
 (defonce fs (node-require "fs"))

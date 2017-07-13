@@ -14,7 +14,7 @@
 (defonce workspace (atom nil))
 
 (defn ^:export init!
-  [settings]
+  []
   (reagent/render
    [v/ui]
    (-> "#app" $ (aget 0)))

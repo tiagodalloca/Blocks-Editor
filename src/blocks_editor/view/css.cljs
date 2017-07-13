@@ -8,3 +8,7 @@
 (defn gen-style! [style]
   (-> style css gs/installStyles))
 
+;; (gen-style!
+;;  [[:.blocklyToolboxDiv
+;;    {:background-color "aliceblue"}]])
+

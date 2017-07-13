@@ -10,5 +10,5 @@
                     :refer [go go-loop alt!]]))
 
 (go (<! (subscribe-on-wload))
-    (c/init! {}))
+    (c/init!))
 
