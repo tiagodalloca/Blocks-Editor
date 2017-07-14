@@ -9,8 +9,9 @@
     {:height "100vh"}]
 
    [:.robot-name
-    {:max-width "50vw"
-     :margin "3px"
+    {:width "100%"
+     :max-width "50vw"
+     :margin-top "3px"
      :padding "0px"}]
 
    [:.be-menu

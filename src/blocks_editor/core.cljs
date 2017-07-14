@@ -20,8 +20,9 @@
    (-> "#app" $ (aget 0)))
   (doto (.ajax $ (clj->js  {:url "assets/xml/toolbox.xml"}))
     (.done #(do (set! workspace (-> "#blocklyDiv" $ (aget 0)
-                                   (b/inject
-                                    (clj->js {:toolbox %}))))
+                                    (b/inject
+                                     (clj->js {:toolbox %}))))
                 (rf/dispatch [:init-db]))))
-  ($ #(doto ($ "[data-toggle=\"tooltip\"]") .tooltip)))
+  (doto ($ "[data-toggle=\"tooltip\"]")
+    .tooltip))
 
