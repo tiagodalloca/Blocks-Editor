@@ -8,9 +8,10 @@
    [:.be-blockly
     {:height "100vh"}]
 
-   [:#robot-select
+   [:.robot-name
     {:max-width "50vw"
-     :margin-top "3px"}]
+     :margin "3px"
+     :padding "0px"}]
 
    [:.be-menu
     {:right "0px"

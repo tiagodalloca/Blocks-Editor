@@ -12,11 +12,17 @@
 
 (rf/reg-event-db
  :init-db
- (fn [_ [_ v]] v))
+ (fn [_ _]
+   {:robot-name ""}))
 
 (rf/reg-event-db
  :app-start
  (fn [_ [_ v]] v))
+
+(rf/reg-event-db
+ :update-robot-name
+ (fn [db [_ v]]
+   (assoc db :robot-name v)))
 
 (rf/reg-event-db
  :open-file
