@@ -14,7 +14,7 @@
      :margin-top "3px"
      :padding "0px"}]
 
-   [:.be-menux
+   [:.be-menu
     {:right "0px"
      :left "auto"
      :max-width "50vw"}
