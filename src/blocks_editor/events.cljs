@@ -49,11 +49,21 @@
          (let [wdom (-> c/workspace bx/workspaceToDom)
                vars (.createElement js/document "shadow")
                svars  (-> c/workspace bv/allUsedVariables .join)
-               tvars (.createTextNode js/document svars)]
+               tvars (.createTextNode js/document svars)
+
+               rname (.createElement js/document "shadow") 
+               srname (:robot-name db)
+               trname (.createTextNode js/document srname)]
+           
            (doto vars
              (.appendChild tvars)
-             (.setAttribute "type" "variables_used")) 
+             (.setAttribute "type" "variables_used"))
+           (doto rname
+             (.appendChild trname)
+             (.setAttribute "type" "robot_name"))
+           
            (.insertBefore wdom vars (.-firstChild wdom))
+           (.insertBefore wdom rname vars)
            (.writeFile fs % (bx/domToPrettyText wdom)
                        (fn [err]
                          (when err
