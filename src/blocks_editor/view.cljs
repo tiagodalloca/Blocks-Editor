@@ -16,21 +16,11 @@
                   :on-click #(rf/dispatch [event])) 
    [:span (assoc (ve/icon icon) :style {:font-size "30px"})]])
 
-(defn chooser
-  [id title items]
-  (reduce conj [:select {:id id
-                         :placeholder title
-                         :class "form-control"}]
-          (reduce (fn [acc [l v]]
-                    (conj acc [:option {:value v} l]))
-                  [] (partition 2 items))))
-
 (defn robot-name
   [default-value]
   (let [rname (rf/subscribe [:robot-name])]
     (fn [] [:input {:class "form-control robot-name"
-                   :type "text"
-                   :defaultValue default-value
+                   :type "text" 
                    :value @rname
                    :on-change #(rf/dispatch
                                 [:update-robot-name

@@ -16,10 +16,6 @@
    {:robot-name ""}))
 
 (rf/reg-event-db
- :app-start
- (fn [_ [_ v]] v))
-
-(rf/reg-event-db
  :update-robot-name
  (fn [db [_ v]]
    (assoc db :robot-name v)))
@@ -30,14 +26,19 @@
    (.showOpenDialog
     dialog
     #(when %
-       (.readFile fs (aget % 0) "utf-8"
-                  (fn [err content]
-                    (if-not err
-                      (-> content
-                         bx/textToDom (bx/domToWorkspace c/workspace))
-                      (js/alert (str
-                                 "Sorry, could not open your file: \n"
-                                 err)))))))))
+       (.readFile
+        fs (aget % 0) "utf-8"
+        (fn [err content]
+          (if-not err
+            (let [wdom (bx/textToDom content)
+                  rname (some-> wdom .-children (aget 0)
+                                .-innerHTML)] 
+              (bx/domToWorkspace wdom c/workspace)
+              (rf/dispatch [:update-robot-name rname]))
+            (do (js/alert (str
+                           "Sorry, could not open your file: \n"
+                           err))))))))
+   db))
 
 (rf/reg-event-db
  :save-file
@@ -47,11 +48,11 @@
       dialog
       #(when % 
          (let [wdom (-> c/workspace bx/workspaceToDom)
-               vars (.createElement js/document "shadow")
+               vars (.createElement js/document "meta")
                svars  (-> c/workspace bv/allUsedVariables .join)
                tvars (.createTextNode js/document svars)
 
-               rname (.createElement js/document "shadow") 
+               rname (.createElement js/document "meta") 
                srname (:robot-name db)
                trname (.createTextNode js/document srname)]
            
@@ -69,10 +70,12 @@
                          (when err
                            (js/alert "Sorry, could not save your file")))))))
      (js/alert "There's no blocks to save"
-               "Alert"))))
+               "Alert"))
+   db))
 
 (rf/reg-event-db
  :compile
  (fn [db [_ _]] 
-   (js/alert "COMPILE")))
+   (js/alert "COMPILE")
+   db))
 
