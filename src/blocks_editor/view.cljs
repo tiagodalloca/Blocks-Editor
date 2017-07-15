@@ -18,7 +18,10 @@
 
 (defn robot-name
   [default-value]
-  (let [rname (rf/subscribe [:robot-name])]
+  (let [rname (rf/subscribe [:robot-name])]    
+    (if-not @rname
+      (rf/dispatch [:update-robot-name
+                    default-value]))
     (fn [] [:input {:class "form-control robot-name"
                    :type "text" 
                    :value @rname

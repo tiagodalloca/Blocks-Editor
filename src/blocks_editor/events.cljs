@@ -13,7 +13,7 @@
 (rf/reg-event-db
  :init-db
  (fn [_ _]
-   {:robot-name ""}))
+   {:robot-name nil}))
 
 (rf/reg-event-db
  :update-robot-name
