@@ -300,4 +300,8 @@
     <sep></sep>
     <category id="catVariables" colour="330" custom="VARIABLE" name="Variables"></category>
     <category id="catFunctions" colour="290" custom="PROCEDURE" name="Functions"></category>
+		<sep></sep>
+		<category id="catEvents" colour="182" name="Events">
+      <block type="update" name="UPDATE"></block>
+    </category>
 </xml>
