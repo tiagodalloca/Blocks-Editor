@@ -14,9 +14,3 @@
 
 (set! (.-onload js/window) #(do (go (>! w-load-c %&))))
 
-;; (let [c (subscribe-on-wload)]
-;;   (go (print (<! c))))
-
-;; (put! w-load-c "asldf")
-
-
