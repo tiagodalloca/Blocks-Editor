@@ -301,8 +301,9 @@
     <category id="catVariables" colour="330" custom="VARIABLE" name="Variables"></category>
     <category id="catFunctions" colour="290" custom="PROCEDURE" name="Functions"></category>
 		<sep></sep>
-		<category id="catEvents" colour="182" name="Events">
-      <block type="events_update"></block>
-			<block type="events_return"></block>
+		<category id="catGame" colour="182" name="Game">
+      <block type="game_update"></block>
+			<block type="game_return"></block>
+			<block type="game_action"></block>
     </category>
 </xml>
