@@ -35,11 +35,15 @@
 (def action-block
   {:type "game_action"
    :lastDummyAlign0 "RIGHT"
-   :message0 "%1 %2"
+   :message0 "%1 %2 %3 %4"
    :args0 ["action"
-           {:type "field_input", :name "ACTION_NAME", :text "walk", :spellcheck false}]
+           {:type "field_input", :name "ACTION_NAME", :text "action_name", :spellcheck false}
+           "args"
+           {:type "input_value"
+            :name "ARGS"
+            :check "Array"}]
    :output "ActionBlock"
-   :colour 250
+   :colour 0
    :tooltip "Something to do and its args"
    :helpUrl ""})
 
@@ -50,7 +54,7 @@
 ;;            asdf#  (.require goog "Blockly.Blocks")
 ;;            bblocks# (js* "Blockly.Blocks")
 ;;            bsvg# (js* "Blockly.BlockSvg")]
-;;        ~(map (fn [[s m]] `(set! (~(symbol (str ".-" s))
+;;        ~@~(map (fn [[s m]] `(set! (~(symbol (str ".-" s))
 ;;                                 bblocks#)
 ;;                                (clj->js ~m)))
 ;;              ~bs))))
