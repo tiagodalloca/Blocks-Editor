@@ -302,6 +302,7 @@
     <category id="catFunctions" colour="290" custom="PROCEDURE" name="Functions"></category>
 		<sep></sep>
 		<category id="catGame" colour="182" name="Game">
+      <block type="game_init"></block>
       <block type="game_update"></block>
 			<block type="game_return"></block>
 			<block type="game_action"></block>

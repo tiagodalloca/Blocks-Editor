@@ -10,6 +10,15 @@
                     :refer [go go-loop alt!]]))
 
 
+(def init-block
+  {:type "game_init" 
+   :message0 "%1"
+   :args0 ["INIT"]
+   :nextStatement nil
+   :colour 30
+   :tooltip "It's called when creating an instace of your robot"
+   :helpUrl ""})
+
 (def update-block
   {:type "game_update"
    :lastDummyAlign0 "RIGHT"
@@ -76,6 +85,13 @@
                   (this-as this
                     (.jsonInit this
                                (clj->js update-block))))}))
+
+  (set! (.-game_init bblocks)
+        (clj->js
+         {:init (fn []
+                  (this-as this
+                    (.jsonInit this
+                               (clj->js init-block))))})) 
 
   (set! (.-game_return bblocks)
         (clj->js
