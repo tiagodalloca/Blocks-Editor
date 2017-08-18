@@ -36,7 +36,7 @@
     [:div#menu ve/menu
      [:div {:style {:padding "6px 0px"}}
       [menu-button "glyphicon-folder-open"
-       "Open file"
+       "HUE"
        :open-file]
       [menu-button "glyphicon-floppy-disk"
        "Save file"
