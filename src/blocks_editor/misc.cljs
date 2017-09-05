@@ -20,10 +20,8 @@
 
 (go (<! (subscribe-on-wload)) 
     (defonce goog (js* "goog"))
-    (.require goog "Blockly.Variables")
-    (def a "ou")
-    (defonce blockly-variables (js* "Blockly.Variables"))
-    (def b "hue")
+    (.require goog "Blockly.Variables") 
+    (defonce blockly-variables (js* "Blockly.Variables")) 
     (set! (.-promptName blockly-variables) prompt-name)
     (set! (.-createVariable blockly-variables) create-variable))
 
