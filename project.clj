@@ -26,20 +26,25 @@
   :hooks [leiningen.cljsbuild] 
   :cljsbuild {:builds
               {:release {:source-paths ["src"]
-                         :compiler {:main blocks-editor.init
-                                    :target :nodejs
+                         :compiler {:main "blocks-editor.init"
+
+                                    :parallel-build true
+                                    :cache-analysis false
+                                    :closure-defines {"goog.DEBUG" false}
+
                                     :output-to "app/js/compiled/app.js"
+                                    :output-dir "app/js/compiled/release/out"
                                     :libs ["app/node_modules/blockly/"]
-                                    :asset-path "js/compiled/out"
-                                    :optimizations :advanced}}
+                                    :asset-path "js/compiled/release/out"
+                                    :optimizations :none}}
                
                :dev {:source-paths ["src" "dev/cljs/"]
                      :figwheel {:on-jsload "cljs.user/reload"}
-                     :compiler {:main cljs.user 
+                     :compiler {:main "cljs.user" 
                                 :output-to "app/js/compiled/app.js"
-                                :output-dir "app/js/compiled/out" 
+                                :output-dir "app/js/compiled/dev/out" 
                                 :libs ["app/node_modules/blockly/"] 
-                                :asset-path "js/compiled/out"
+                                :asset-path "js/compiled/dev/out"
                                 :source-map-timestamp true
                                 :preloads [devtools.preload]
                                 :optimizations :none}}}}
