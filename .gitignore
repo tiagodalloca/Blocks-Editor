@@ -1,3 +1,5 @@
+app/release-builds/*
+
 .projectile
 
 out_front

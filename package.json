@@ -2,13 +2,14 @@
 		"name": "blocks-editor",
 		"version": "0.1.0",
 		"main": "app/main.js",
-		"scripts": {
-				"start": "electron ./app"
-		},
-
+		
 		"devDependencies": {			
 				"electron": "^1.6.2",
 				"closurecompiler-externs": "^1.0.4"
-	}
+		},
+
+		"scripts": {
+				"build": "electron-packager app --all --out app/release-builds",
+				"start": "electron ./app"}
 }
 

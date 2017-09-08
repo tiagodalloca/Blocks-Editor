@@ -1,14 +1,14 @@
 {
-  "name": "blocks-editor",
-  "version": "0.1.0",
-  "main": "main.js",
-  "devDependencies": {
-    "google-closure-compiler-js": "^20170218.0.0"
-  },
-  "dependencies": {
-    "blockly": "^1.0.0",
-    "bootbox": "^4.4.0",
-    "bootstrap": "^3.3.7",
-    "jquery": "^3.2.1"
-  }
+		"name": "blocks-editor",
+		"version": "0.1.0",
+		"main": "main.js",
+		"devDependencies": {
+				"google-closure-compiler-js": "^20170218.0.0"
+		},
+		"dependencies": {
+				"blockly": "^1.0.0",
+				"bootbox": "^4.4.0",
+				"bootstrap": "^3.3.7",
+				"jquery": "^3.2.1"
+		}
 }
