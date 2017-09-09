@@ -80,6 +80,18 @@
     :output "Associative"
     :colour 200
     :tooltip "Creates a new dictionary"
+    :helpUrl ""}
+
+   {:type "associative_from_list"
+    :lastDummyAlign0 "RIGHT"
+    :message0 "%1 %2"
+    :args0 ["create new dictionary from a list " 
+            {:type "input_value"
+             :name "LIST"
+             :check "Array"}]
+    :output "Associative"
+    :colour 200
+    :tooltip "Creates a new dictionary from a list"
     :helpUrl ""}])
 
 (defn init-blocks! []
@@ -96,3 +108,4 @@
                       (->> b clj->js (.jsonInit this))))})))
   
   (set! (.-START_HAT bsvg) true))
+
