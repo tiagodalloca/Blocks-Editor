@@ -1,7 +1,7 @@
 (ns user
   (:use [figwheel-sidecar.repl-api :as ra]))
 
-(defn start [] (ra/start-figwheel!))
+(defn start [& args] (apply ra/start-figwheel! args))
 
 (defn stop [] (ra/stop-figwheel!))
 
