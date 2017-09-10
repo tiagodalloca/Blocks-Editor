@@ -9,7 +9,7 @@
 		},
 
 		"scripts": {
-				"build": "electron-packager app --all --out app/release-builds",
+				"build": "electron-packager app --all  --asar true --icon app/assets/icon-c --out app/release-builds --overwrite", 
 				"start": "electron ./app"}
 }
 

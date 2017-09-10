@@ -237,6 +237,7 @@
     </category>
 		<category id="catAssociatives" colour="200" name="Dictionary">
       <block type="associative_new"></block>
+			<block type="associative_kv"></block>
 			<block type="associative_from_list"></block>
 			<block type="associative_get"></block>
 			<block type="associative_set"></block>

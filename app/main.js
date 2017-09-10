@@ -2,11 +2,17 @@ const {app, BrowserWindow, remote} = require('electron');
 const path = require('path');
 const url = require('url');
 
-var win
+var win;
 
 function createWindow () {
 		// Create the browser window.
-		win = new BrowserWindow({width: 800, height: 800, fullscreen: false});
+		win = new BrowserWindow({
+				width: 600,
+				height: 600,
+				minWidth: 600,
+				minHeight: 300,
+				fullscreen: false,
+				icon: path.join(__dirname, 'assets/icons/png/256x256.png')});
 
 		// and load the index.html of the app.
 		win.loadURL(url.format({
