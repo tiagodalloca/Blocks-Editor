@@ -1,11 +1,15 @@
 #!/bin/bash
 
-echo "Cleaning ..."
+RED='\033[0;31m'
+GREEN='\e[32m'
+NC='\033[0m'
+
+echo "Cleaning..."
 lein clean
-echo -e "${GREEN}Done${NC}"
+echo -e "${GREEN}Done${NC}\n"
 # echo "Compiling cljs ..."
 lein cljsbuild once release
 echo -e "${GREEN}Done${NC}"
-echo "Packaging ..."
+echo "Packaging..."
 npm run build
 echo -e "${GREEN}Done${NC}"

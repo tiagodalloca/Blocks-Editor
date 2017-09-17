@@ -47,6 +47,8 @@
     :tooltip "Gets something (key) from a dictionary",
     :helpUrl ""}
    {:type "associative_set",
+    :nextStatement "",
+    :previousStatement "",
     :lastDummyAlign0 "RIGHT",
     :message0 "set %1 from %2 to %3",
     :args0
@@ -54,7 +56,6 @@
      {:type "input_value", :name "ASSOCIATIVE", :check "Associative"}
      {:type "input_value", :name "VALUE"}],
     :colour 200,
-    :output "",
     :tooltip
     "Stores something into a dictionary with under a label (key)",
     :helpUrl ""}
