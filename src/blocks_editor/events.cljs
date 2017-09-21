@@ -33,6 +33,7 @@
             (let [wdom (bx/textToDom content)
                   rname (some-> wdom .-children (aget 0)
                                 .-innerHTML)] 
+              (.clear c/workspace)
               (bx/domToWorkspace wdom c/workspace)
               (rf/dispatch [:update-robot-name rname]))
             (do (js/alert (str
