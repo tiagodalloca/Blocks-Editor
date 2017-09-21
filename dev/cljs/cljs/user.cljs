@@ -1,5 +1,6 @@
 (ns cljs.user
-  (:require [figwheel.client :as fw :include-macros true]
+  (:require [re-frame.core :as rf]
+            [figwheel.client :as fw :include-macros true]
             [blocks-editor.async-events :refer [w-load-c]]
             [cljs.core.async :as async
              :refer [put! chan tap mult <! >! timeout close!]])
