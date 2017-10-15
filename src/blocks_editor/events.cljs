@@ -1,24 +1,68 @@
 (ns ^:figwheel-load blocks-editor.events
   (:require [re-frame.core :as rf]
             [blocks-editor.core :as c]
+            [blocks-editor.utils :refer [node-require fs read-file
+                                         call-system]]
             
             [Blockly.Xml :as bx]
-            [Blockly.Variables :as bv]))
+            [Blockly.Variables :as bv]
 
-(defonce node-require (js* "require"))
+            [cljs.core.async :as async
+             :refer [put! chan tap mult <! >! timeout close!]])
+  (:require-macros [cljs.core.async.macros
+                    :refer [go go-loop alt!]]))
 
 (defonce dialog (-> "electron" node-require .-remote .-dialog))
-(defonce fs (node-require "fs"))
 
 (rf/reg-event-db
  :init-db
  (fn [_ _]
-   {:robot-name nil}))
+   {:robot-name nil}
+   {:config nil}))
+
+(rf/reg-event-fx
+ :setup-config
+ (fn [cofx [_ path]] 
+   {:load-config path }))
+
+(rf/reg-fx
+ :load-config
+ (fn [path] 
+   (go (rf/dispatch [:set-config
+                     (-> path read-file <!                   
+                         cljs.reader/read-string)]))))
+
+(rf/reg-fx
+ :call-compiler
+ (fn [{:keys [name mono? compiler-path]}] 
+   (call-system (str (when mono? "mono ") compiler-path)
+                ["-i" ""
+                 "-o" (str name "files")
+                 "-n" name])))
+
+(rf/reg-event-db
+ :set-config
+ (fn [db [_ v]] 
+   (assoc db :config v)))
 
 (rf/reg-event-db
  :update-robot-name
  (fn [db [_ v]]
    (assoc db :robot-name v)))
+
+(rf/reg-event-fx
+ :compile
+ (fn [{:keys [db]} _] 
+   (if-let [config (get db :config)]
+     {:call-compiler (assoc config :name
+                            (get db :name))}
+     {:alert (str
+              "It seems that you're hanging around with some improper configurations")})))
+
+;; ===
+;; THE UNGLY AND OLD
+;; ===
+;; ...
 
 (rf/reg-event-db
  :open-file
@@ -72,11 +116,5 @@
                            (js/alert "Sorry, could not save your file")))))))
      (js/alert "There's no blocks to save"
                "Alert"))
-   db))
-
-(rf/reg-event-db
- :compile
- (fn [db [_ _]] 
-   (js/alert "COMPILE")
    db))
 

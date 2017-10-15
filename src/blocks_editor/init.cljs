@@ -12,5 +12,5 @@
 
 (go (<! (subscribe-on-wload))
     (init-blocks!)
-    (c/init!))
+    (c/init! "./config.edn"))
 
