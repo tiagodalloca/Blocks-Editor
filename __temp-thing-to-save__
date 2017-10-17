@@ -1,0 +1,107 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <meta type="robot_name">pong-robot</meta>
+  <meta type="variables_used">state,ball-pos-y,player-pos-y,speed</meta>
+  <block type="game_init" id="R]/2p@vIogXN1B2A6r*`" x="356" y="85"></block>
+  <block type="game_update" id=",E`=gHc7xhYMKYTAT9XG" x="354" y="196">
+    <field name="state">state</field>
+    <next>
+      <block type="variables_set" id="9{om0LivZm)4ZY%WF(49">
+        <field name="VAR">ball-pos-y</field>
+        <value name="VALUE">
+          <block type="lists_getIndex" id="9dnyJSXo{`MPYr?suRNx">
+            <mutation statement="false" at="true"></mutation>
+            <field name="MODE">GET</field>
+            <field name="WHERE">FROM_START</field>
+            <value name="VALUE">
+              <block type="associative_get" id="ZMevx-aGNe^G0ujzMijs">
+                <field name="KEY">ball-pos</field>
+                <value name="ASSOCIATIVE">
+                  <block type="variables_get" id="Fi=AK`?qi]5lIF}/]IHE">
+                    <field name="VAR">state</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="AT">
+              <block type="math_number" id="0QWoEjJ61ai^I=rrRFi7">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="A.-_qqM)3=L_y-jM:vAB">
+            <field name="VAR">player-pos-y</field>
+            <value name="VALUE">
+              <block type="lists_getIndex" id="zZE:E}8#ZHF/lLoA|-C1">
+                <mutation statement="false" at="true"></mutation>
+                <field name="MODE">GET</field>
+                <field name="WHERE">FROM_START</field>
+                <value name="VALUE">
+                  <block type="associative_get" id="zq@ov)WVh4mZrPEh^2^A">
+                    <field name="KEY">player-pos</field>
+                    <value name="ASSOCIATIVE">
+                      <block type="variables_get" id="Zwf.r=UR*3~g++0=s.=7">
+                        <field name="VAR">state</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="AT">
+                  <block type="math_number" id="80{)JI4t-bUCVO@b-DoO">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id=":#J`G1[|~+9dBjbp(/;x">
+                <field name="VAR">speed</field>
+                <value name="VALUE">
+                  <block type="math_arithmetic" id="1Z}3/u%5ZYX?p*(bmttX">
+                    <field name="OP">MINUS</field>
+                    <value name="A">
+                      <shadow type="math_number" id="^P-UNIH*mu@6q1+yC_[E">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="variables_get" id="L*qZe!gmZ7iYjB!o?7Wo">
+                        <field name="VAR">ball-pos-y</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <shadow type="math_number" id="9c4|2]_Mmk:{xWU236kn">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="variables_get" id="JW~7W+YwF:DGGz/T%[dT">
+                        <field name="VAR">player-pos-y</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="game_return" id="e0lC}!sA/U+!^huhcXQ4">
+                    <value name="ACTION">
+                      <block type="game_action" id="qIZYOb#jrghA;?bdwrD0">
+                        <field name="ACTION_NAME">move</field>
+                        <value name="ARGS">
+                          <block type="lists_create_with" id="{hG+9K5/14}%@waivw/-">
+                            <mutation items="1"></mutation>
+                            <value name="ADD0">
+                              <block type="variables_get" id="+0*JDSX!gGF|~~k}T!:n">
+                                <field name="VAR">speed</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

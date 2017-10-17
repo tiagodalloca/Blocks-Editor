@@ -1,7 +1,13 @@
 (ns ^:figwheel-load blocks-editor.events
   (:require [re-frame.core :as rf]
             [blocks-editor.core :as c]
-            [blocks-editor.utils :refer [node-require fs read-file
+            [blocks-editor.utils :refer [node-require fs
+                                         read-file
+                                         select-save-file
+                                         select-open-file
+                                         select-dir
+                                         save-to-file
+                                         delete
                                          call-system]]
             
             [Blockly.Xml :as bx]
@@ -13,6 +19,31 @@
                     :refer [go go-loop alt!]]))
 
 (defonce dialog (-> "electron" node-require .-remote .-dialog))
+
+(defn save-workspace! [path]
+  (when path
+    (let [db @re-frame.db/app-db
+          wdom (-> c/workspace bx/workspaceToDom)
+          vars (.createElement js/document "meta")
+          svars  (-> c/workspace bv/allUsedVariables .join)
+          tvars (.createTextNode js/document svars)
+
+          rname (.createElement js/document "meta") 
+          srname (:robot-name db)
+          trname (.createTextNode js/document srname)]
+      
+      (doto vars
+        (.appendChild tvars)
+        (.setAttribute "type" "variables_used"))
+      (doto rname
+        (.appendChild trname)
+        (.setAttribute "type" "robot_name"))
+      
+      (.insertBefore wdom vars (.-firstChild wdom))
+      (.insertBefore wdom rname vars)
+      (save-to-file path (bx/domToPrettyText wdom)))))
+
+;; EVENTS
 
 (rf/reg-event-db
  :init-db
@@ -35,14 +66,26 @@
 (rf/reg-fx
  :call-compiler
  (fn [{:keys [name mono? compiler-path]}] 
-   (call-system (str (when mono? "mono ") compiler-path)
-                ["-i" ""
-                 "-o" (str name "files")
-                 "-n" name])))
+   (let [temp-file-name "__temp-thing-to-save__"]
+     (go (when-let [o (-> (select-dir) <! ( aget 0) )]
+           (do (save-workspace! temp-file-name)
+               (let [call-vec ["-i" (str \"temp-file-name\")
+                               "-o" o
+                               "-n" (str \"name "-lib" \")]
+                     c (call-system (str (when mono? "mono ")
+                                         \"compiler-path\")  
+                                    call-vec)]
+                 (loop [[x y] (<! c)]
+                   (if-not  (= x :err)
+                     (println (name x) ": " y)
+                     (do (println (name x) ": " (.-message y) " "
+                                  (clojure.string/join " " call-vec))))
+                   (recur (<! c))))
+               (delete temp-file-name)))))))
 
 (rf/reg-event-db
  :set-config
- (fn [db [_ v]] 
+ (fn [db [_ v]]
    (assoc db :config v)))
 
 (rf/reg-event-db
@@ -55,7 +98,7 @@
  (fn [{:keys [db]} _] 
    (if-let [config (get db :config)]
      {:call-compiler (assoc config :name
-                            (get db :name))}
+                            (get db :robot-name))}
      {:alert (str
               "It seems that you're hanging around with some improper configurations")})))
 
@@ -89,32 +132,7 @@
  :save-file
  (fn [db [_ _]] 
    (if (.-getTopBlocks c/workspace) 
-     (.showSaveDialog
-      dialog
-      #(when % 
-         (let [wdom (-> c/workspace bx/workspaceToDom)
-               vars (.createElement js/document "meta")
-               svars  (-> c/workspace bv/allUsedVariables .join)
-               tvars (.createTextNode js/document svars)
-
-               rname (.createElement js/document "meta") 
-               srname (:robot-name db)
-               trname (.createTextNode js/document srname)]
-           
-           (doto vars
-             (.appendChild tvars)
-             (.setAttribute "type" "variables_used"))
-           (doto rname
-             (.appendChild trname)
-             (.setAttribute "type" "robot_name"))
-           
-           (.insertBefore wdom vars (.-firstChild wdom))
-           (.insertBefore wdom rname vars)
-           (.writeFile fs % (bx/domToPrettyText wdom)
-                       (fn [err]
-                         (when err
-                           (js/alert "Sorry, could not save your file")))))))
-     (js/alert "There's no blocks to save"
-               "Alert"))
+     (.showSaveDialog dialog save-workspace!)
+     (js/alert "There's no blocks to save"))
    db))
 
