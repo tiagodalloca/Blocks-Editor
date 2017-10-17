@@ -66,27 +66,30 @@
 (rf/reg-fx
  :call-compiler
  (fn [{:keys [name mono? compiler-path]}] 
-   (let [temp-file-name "__temp-thing-to-save__"]
-     (go (when-let [o (-> (select-dir) <! ( aget 0) )]
-           (do (save-workspace! temp-file-name)
-               (let [call-vec ["-i" (str \"temp-file-name\")
-                               "-o" o
-                               "-n" (str \"name "-lib" \")]
-                     c (call-system (str (when mono? "mono ")
+   (let [temp-file-name  (str js/__dirname
+                              "/__temp-thing-to-save__")]
+     (go (when-let [o (some-> (<! (select-dir)) (aget 0))] 
+           (if-let [err (<! (save-workspace! temp-file-name))]
+             (js/alert err)             
+             (let [call-vec ["-i" (str \"temp-file-name\")
+                             "-o" o
+                             "-n" (str \"name "-lib" \")]
+                   {:keys [err stderr stdout]}
+                   (<! (call-system (str (when mono? "mono ")
                                          \"compiler-path\")  
-                                    call-vec)]
-                 (loop [[x y] (<! c)]
-                   (if-not  (= x :err)
-                     (println (name x) ": " y)
-                     (do (println (name x) ": " (.-message y) " "
-                                  (clojure.string/join " " call-vec))))
-                   (recur (<! c))))
+                                    call-vec))] 
+               (when err
+                 (js/alert (str "Error to call compiler:\n"
+                                err)))
+               (when-not (empty? stderr)
+                 (js/alert (str "Error compilig:\n"
+                                stderr))) 
                (delete temp-file-name)))))))
 
-(rf/reg-event-db
- :set-config
- (fn [db [_ v]]
-   (assoc db :config v)))
+ (rf/reg-event-db
+  :set-config
+  (fn [db [_ v]]
+    (assoc db :config v))))
 
 (rf/reg-event-db
  :update-robot-name

@@ -13,18 +13,23 @@
 
 (defn warn [s] (.warn js/console s))
 
+(defn make-io-handler [c]
+  (fn [err]
+    (go (when err (>! c err)) (close! c))))
+
 (defn read-file [path]
   "Returns a channel containing the file content"
   (let [c (chan)]
     (.readFile fs path "utf8" (fn [err data]
                                 (go (>! c (if err
-                                            (warn err) data)))))
+                                            (warn err) data))
+                                    (close! c))))
     c))
 
 (defn select-save-file []
   "Returns a channel containing a file name"
   (let [c (chan)]
-    (.showSaveDialog dialog #(go (when % (>! c %))))
+    (.showSaveDialog dialog (make-io-handler c))
     c))
 
 (defn select-open-file []
@@ -32,29 +37,33 @@
   (let [c (chan)]
     (.showOpenDialog dialog
                      #js  {:properties #js ["openFile"]}
-                     #(go (when % (>! c %))))
+                     (make-io-handler c))
     c))
 
 (defn select-dir []
   "Returns a channel containing a file name"
   (let [c (chan)]
     (.showOpenDialog dialog #js {:properties #js ["openDirectory"]}
-                     #(go (when % (>! c %))))
+                     #(go (when % (>! c %))
+                          (close! c)))
     c))
 
 (defn save-to-file [path content]
   (let [c (chan)]
-    (.writeFile fs path content (fn [err] (>! c err)))))
+    (.writeFile fs path content (make-io-handler c))
+    c))
 
 (defn delete [path]
   (let [c (chan)]
-    (.unlink fs path (fn [err] (>! c err)))))
+    (.unlink fs path (make-io-handler c))
+    c))
 
 (defn read-dir [dir]
   (let [c (chan)]
     (.readdir fs dir (fn [err files]
                        (go (>! c (if err
-                                   (warn err) (js->clj files))))))
+                                   (warn err) (js->clj files)))
+                           (close! c))))
     c))
 
 ;; COMPILER STUFF
@@ -64,9 +73,8 @@
         child (exec (str cmd " "
                          (clojure.string/join " " args))
                     (fn [err stdout stderr]
-                      (go (when err (>! c [:err err]))
-                          (when-not (empty? stderr)
-                            (>! c [:stderr stderr]))
-                          (when-not (empty? stdout)
-                            (>! c [:stdout stdout])))))]  
+                      (go (>! c {:err err
+                                 :stderr stderr
+                                 :stdout stdout})
+                          (close! c))))]  
     c))
