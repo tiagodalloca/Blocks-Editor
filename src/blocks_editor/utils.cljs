@@ -6,6 +6,7 @@
                     :refer [go go-loop alt!]]))
 
 (defonce node-require (js* "require"))
+(defonce electron (node-require "electron"))
 (defonce fs (node-require "fs"))
 (defonce exec (-> "child_process" node-require .-exec))
 (defonce execFile (-> "child_process" node-require .-execFile))
