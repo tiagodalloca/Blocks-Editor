@@ -8,6 +8,7 @@
                                          select-dir
                                          save-to-file
                                          delete
+                                         dirname
                                          call-system]]
             
             [Blockly.Xml :as bx]
@@ -59,14 +60,18 @@
 (rf/reg-fx
  :load-config
  (fn [path] 
-   (go (rf/dispatch [:set-config
-                     (-> path read-file <!                   
-                         cljs.reader/read-string)]))))
+   (go (try (rf/dispatch
+             [:set-config (some-> (<! (read-file path))
+                                  cljs.reader/read-string)])
+            (catch js/Error e
+              (-> "config.edn: \n" (str e) js/alert))))))
+
+(rf/reg-fx :alert js/alert)
 
 (rf/reg-fx
  :call-compiler
  (fn [{:keys [name mono? compiler-path]}] 
-   (let [temp-file-name  (str js/__dirname
+   (let [temp-file-name  (str (dirname js/__dirname)
                               "/__temp-thing-to-save__")]
      (go (when-let [o (some-> (<! (select-dir)) (aget 0))] 
            (if-let [err (<! (save-workspace! temp-file-name))]
@@ -102,8 +107,7 @@
    (if-let [config (get db :config)]
      {:call-compiler (assoc config :name
                             (get db :robot-name))}
-     {:alert (str
-              "It seems that you're hanging around with some improper configurations")})))
+     {:alert (str "Bad formatted config.edn (or none at all)")})))
 
 ;; ===
 ;; THE UNGLY AND OLD

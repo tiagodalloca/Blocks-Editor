@@ -8,6 +8,7 @@
 (defonce node-require (js* "require"))
 (defonce electron (node-require "electron"))
 (defonce fs (node-require "fs"))
+(defonce node-path (node-require "path"))
 (defonce exec (-> "child_process" node-require .-exec))
 (defonce execFile (-> "child_process" node-require .-execFile))
 (defonce dialog (-> "electron" node-require .-remote .-dialog))
@@ -22,8 +23,9 @@
   "Returns a channel containing the file content"
   (let [c (chan)]
     (.readFile fs path "utf8" (fn [err data]
-                                (go (>! c (if err
-                                            (warn err) data))
+                                (go (if-not err
+                                      (>! c data) 
+                                      (warn err))
                                     (close! c))))
     c))
 
@@ -67,7 +69,8 @@
                            (close! c))))
     c))
 
-;; COMPILER STUFF
+(defn dirname [path]
+  (.dirname node-path path))
 
 (defn call-system [cmd args]
   (let [c (-> 1 async/buffer chan) 
